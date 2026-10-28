@@ -1,0 +1,428 @@
+{
+  "min_shared": 2,
+  "runs": [
+    {
+      "job_id": "pm_informed_privileged_r1",
+      "accepted": 99,
+      "classes": {
+        "live gold": 26,
+        "rejected gold": 0,
+        "decision text": 73,
+        "none": 0
+      },
+      "decision_text_by_rule": {
+        "contained": 36,
+        "shares two words": 37
+      },
+      "decision_text_one_content_word": 9,
+      "decision_annotations_at_last_checkpoint": 16,
+      "decision_annotation_mean_chars": 1434,
+      "examples": {
+        "live gold": [
+          {
+            "state_key": "project.owner.user_interface_designers",
+            "value": "User Interface Designers"
+          },
+          {
+            "state_key": "project.owner.user_interface_designers",
+            "value": "Project Manager"
+          },
+          {
+            "state_key": "person.sarah.role",
+            "value": "Marketing Manager / Marketing Expert"
+          },
+          {
+            "state_key": "system.scope.universal",
+            "value": "universal"
+          },
+          {
+            "state_key": "design.approach.input_mode",
+            "value": "touch screen design rather than button-based design"
+          },
+          {
+            "state_key": "design.approach.input_mode",
+            "value": "buttons"
+          }
+        ],
+        "rejected gold": [],
+        "decision text": [
+          {
+            "state_key": "project.decision.remote_control",
+            "value": "make a remote control"
+          },
+          {
+            "state_key": "project.strategy.aesthetic_positioning",
+            "value": "take ordinary stuff and make it nice"
+          },
+          {
+            "state_key": "project.process.detailed_design_stage_count",
+            "value": "three-stage detailed design process"
+          },
+          {
+            "state_key": "project.detailed_design.stage_2.goal",
+            "value": "move from necessary to what would be good"
+          },
+          {
+            "state_key": "project.design.stage3.last_stage_incorporate_possibilities",
+            "value": "incorporate possibilities as the last stage"
+          },
+          {
+            "state_key": "product.requirement.coffee_pot.hold_coffee",
+            "value": "hold coffee"
+          }
+        ],
+        "none": []
+      }
+    },
+    {
+      "job_id": "pm_informed_privileged_r2",
+      "accepted": 106,
+      "classes": {
+        "live gold": 22,
+        "rejected gold": 4,
+        "decision text": 80,
+        "none": 0
+      },
+      "decision_text_by_rule": {
+        "contained": 30,
+        "shares two words": 50
+      },
+      "decision_text_one_content_word": 6,
+      "decision_annotations_at_last_checkpoint": 16,
+      "decision_annotation_mean_chars": 1434,
+      "examples": {
+        "live gold": [
+          {
+            "state_key": "project.role.owner",
+            "value": "Project Manager"
+          },
+          {
+            "state_key": "project.role.marketing_manager",
+            "value": "Marketing Manager / Marketing Expert"
+          },
+          {
+            "state_key": "product.remote_control.type",
+            "value": "universal remote control"
+          },
+          {
+            "state_key": "scope.universal",
+            "value": "universal"
+          },
+          {
+            "state_key": "remote.concept.touch_screen_remote",
+            "value": "touch screen type of remote"
+          },
+          {
+            "state_key": "remote.concept.touch_screen_remote",
+            "value": "touch screen remote with multi-format features"
+          }
+        ],
+        "rejected gold": [
+          {
+            "state_key": "remote.concept.touch_screen_remote",
+            "value": "touch screen remote"
+          },
+          {
+            "state_key": "product.feature.distinguishability",
+            "value": "touch screen as main selling point"
+          },
+          {
+            "state_key": "project.finance.microchip_cost_considered",
+            "value": "more chips would be required to use the scroll buttons"
+          },
+          {
+            "state_key": "remote.concept.touch_screen_remote",
+            "value": "touch screen remote"
+          }
+        ],
+        "decision text": [
+          {
+            "state_key": "project.plan.general_exists",
+            "value": "make a remote control"
+          },
+          {
+            "state_key": "project.design.reference_model",
+            "value": "based on the whole corporate model"
+          },
+          {
+            "state_key": "project.strategy.positioning",
+            "value": "take ordinary stuff and make it nice"
+          },
+          {
+            "state_key": "project.design.style",
+            "value": "slick, sleek design"
+          },
+          {
+            "state_key": "project.process.design_stage_count",
+            "value": "three-stage detailed design process"
+          },
+          {
+            "state_key": "project.detailed_design.stage1.consideration_principle",
+            "value": "work up from what is necessary"
+          }
+        ],
+        "none": []
+      }
+    },
+    {
+      "job_id": "pm_informed_privileged_r3",
+      "accepted": 104,
+      "classes": {
+        "live gold": 24,
+        "rejected gold": 4,
+        "decision text": 76,
+        "none": 0
+      },
+      "decision_text_by_rule": {
+        "contained": 33,
+        "shares two words": 43
+      },
+      "decision_text_one_content_word": 13,
+      "decision_annotations_at_last_checkpoint": 16,
+      "decision_annotation_mean_chars": 1434,
+      "examples": {
+        "live gold": [
+          {
+            "state_key": "project.team.owner",
+            "value": "Project Manager"
+          },
+          {
+            "state_key": "person.sarah.role.marketing_manager",
+            "value": "Marketing Manager / Marketing Expert"
+          },
+          {
+            "state_key": "project.team.owner",
+            "value": "User Interface Designer"
+          },
+          {
+            "state_key": "project.concept.considered_model",
+            "value": "universal"
+          },
+          {
+            "state_key": "design.approach.interface_input_mode",
+            "value": "touch screen design rather than button-based design"
+          },
+          {
+            "state_key": "marketing.target.audience",
+            "value": "who we're marketing this to"
+          }
+        ],
+        "rejected gold": [
+          {
+            "state_key": "design.approach.interface_input_mode",
+            "value": "simple touch screen"
+          },
+          {
+            "state_key": "remote.differentiator.outstanding_feature",
+            "value": "touch screen as main selling point"
+          },
+          {
+            "state_key": "remote.concept.voice_recognition.considered",
+            "value": "better option than touch screen"
+          },
+          {
+            "state_key": "design.approach.interface_input_mode",
+            "value": "large buttons instead of a touch screen"
+          }
+        ],
+        "decision text": [
+          {
+            "state_key": "project.decision.remote_control",
+            "value": "make a remote control"
+          },
+          {
+            "state_key": "project.concept.considered_model",
+            "value": "based on the corporate model"
+          },
+          {
+            "state_key": "project.strategy.positioning",
+            "value": "take ordinary stuff and make it nice"
+          },
+          {
+            "state_key": "project.process.detailed_design_stage_count",
+            "value": "three-stage detailed design process"
+          },
+          {
+            "state_key": "project.detailed_design.stage1.considered_scope",
+            "value": "work up from what is necessary"
+          },
+          {
+            "state_key": "project.design.stage3.consideration_timing",
+            "value": "incorporate at the last stage"
+          }
+        ],
+        "none": []
+      }
+    },
+    {
+      "job_id": "pm_informed_privileged_r4",
+      "accepted": 96,
+      "classes": {
+        "live gold": 26,
+        "rejected gold": 0,
+        "decision text": 70,
+        "none": 0
+      },
+      "decision_text_by_rule": {
+        "contained": 30,
+        "shares two words": 40
+      },
+      "decision_text_one_content_word": 12,
+      "decision_annotations_at_last_checkpoint": 16,
+      "decision_annotation_mean_chars": 1434,
+      "examples": {
+        "live gold": [
+          {
+            "state_key": "project.process.design_guidance.role",
+            "value": "UI Designer and Industrial Designer keep on the cutting edge of maximizing what is possible"
+          },
+          {
+            "state_key": "project.role.project_manager.owner",
+            "value": "Project Manager"
+          },
+          {
+            "state_key": "project.team.member.role",
+            "value": "Marketing Manager / Marketing Expert"
+          },
+          {
+            "state_key": "project.team.member.role",
+            "value": "User Interface Designer"
+          },
+          {
+            "state_key": "marketing.target.audience",
+            "value": "who we're marketing this to"
+          },
+          {
+            "state_key": "project.design.aesthetic_target",
+            "value": "touch screen interface"
+          }
+        ],
+        "rejected gold": [],
+        "decision text": [
+          {
+            "state_key": "project.decision.remote_control",
+            "value": "make a remote control"
+          },
+          {
+            "state_key": "project.strategy.aesthetic_positioning",
+            "value": "take ordinary stuff and make it nice"
+          },
+          {
+            "state_key": "project.process.design_stage_count",
+            "value": "three-stage detailed design process"
+          },
+          {
+            "state_key": "project.process.stage1.prioritization",
+            "value": "work up from what is necessary to what would be good"
+          },
+          {
+            "state_key": "project.process.stage_3.incorporate_last_stage",
+            "value": "incorporate as the last stage"
+          },
+          {
+            "state_key": "project.remote.price_selected",
+            "value": "25 Euros"
+          }
+        ],
+        "none": []
+      }
+    },
+    {
+      "job_id": "pm_informed_privileged_r5",
+      "accepted": 89,
+      "classes": {
+        "live gold": 22,
+        "rejected gold": 1,
+        "decision text": 66,
+        "none": 0
+      },
+      "decision_text_by_rule": {
+        "contained": 25,
+        "shares two words": 41
+      },
+      "decision_text_one_content_word": 10,
+      "decision_annotations_at_last_checkpoint": 16,
+      "decision_annotation_mean_chars": 1434,
+      "examples": {
+        "live gold": [
+          {
+            "state_key": "project.strategy.considered_model",
+            "value": "User Interface Designers"
+          },
+          {
+            "state_key": "project.strategy.considered_model",
+            "value": "User Interface Designer"
+          },
+          {
+            "state_key": "project.owner.industrial_designer",
+            "value": "Industrial Designer"
+          },
+          {
+            "state_key": "project.owner.industrial_designer",
+            "value": "Project Manager"
+          },
+          {
+            "state_key": "project.role.owner_marketing",
+            "value": "Marketing Manager / Marketing Expert"
+          },
+          {
+            "state_key": "remote.input_type",
+            "value": "touch screen type of remote"
+          }
+        ],
+        "rejected gold": [
+          {
+            "state_key": "product.feature.distinguishability",
+            "value": "touch screen as the main selling point"
+          }
+        ],
+        "decision text": [
+          {
+            "state_key": "project.decision.remote_control",
+            "value": "make a remote control"
+          },
+          {
+            "state_key": "project.strategy.considered_model",
+            "value": "make something as fashionable as possible"
+          },
+          {
+            "state_key": "project.process.design_stages",
+            "value": "three-stage design process"
+          },
+          {
+            "state_key": "product.requirement.coffee_pot.holds_coffee",
+            "value": "must hold coffee"
+          },
+          {
+            "state_key": "product.safety.touch_temperature",
+            "value": "should not hurt your hand when touched"
+          },
+          {
+            "state_key": "project.finance.remote_price",
+            "value": "25 Euros"
+          }
+        ],
+        "none": []
+      }
+    }
+  ],
+  "totals": {
+    "live gold": 120,
+    "rejected gold": 9,
+    "decision text": 365,
+    "none": 0
+  },
+  "accepted": 494,
+  "arms_from_incidence": {
+    "autonomous": {
+      "current_facts": 539,
+      "bug13_runs_with_inverted_validity": 0,
+      "runs": 5
+    },
+    "reference-informed": {
+      "current_facts": 215,
+      "bug13_runs_with_inverted_validity": 4,
+      "runs": 5
+    }
+  }
+}

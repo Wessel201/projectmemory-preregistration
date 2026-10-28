@@ -1,0 +1,6755 @@
+{
+ "what": "plan 23 amendment 1: adjudication audit list (the enumeration of amendment line 115, plus rival texts; open_decisions holds the v1 decisions it leaves out, for the author to decide)",
+ "inputs": {
+  "23-loss-trace.json": "da4576242eda6fc181352eb8a4f74172c2961b187ca5e1b5391142c554c9e8a9",
+  "23-loss-trace-adjudications.yaml": "e084d95cd72431fd494b8e5aa7c9e1c69ad80da3481e1271c9d88cd6c272f089"
+ },
+ "script_sha256": "e81946e65a66a69ec49beaaade249828d77990d70bfbd40f1758fbb8ee56188f",
+ "oracle_arms": [
+  "A0",
+  "A1"
+ ],
+ "fields": {
+  "decides_rows": "rows named by each role's rule, for every role except e_no_carry; empty for an e_no_carry-only item, which does not mean the decision decides no row; see the script's docstring",
+  "recorded_result_rows": "only on items with a successor-value rival: rows where the text is the last successor value by k, so the decision also sets the recorded loss",
+  "rows": "named <run suffix>:<fact_id>@<k>; run_map gives each suffix's arm and folder",
+  "labels": "roles, decides_rows and recorded_result_rows determine the v1 label; V4 gets only the packet fields named in the script's docstring, never this file",
+  "open_decisions": "per open decision: status, recommended option, the count each option adds against the list with no option adopted, and each candidate decision with the options that add it and the rows of each role it would take"
+ },
+ "run_map": {
+  "source": "23-loss-trace.json runs[].run_id, runs[].arm, runs[].dir",
+  "runs": {
+   "144b6dec": {
+    "arm": "A0",
+    "dir": "data/ami_eval/a1_smoke/el2020_batch_20261022T214813Z/a0_r1"
+   },
+   "48405ba5": {
+    "arm": "A0",
+    "dir": "data/ami_eval/a1_smoke/el2020_batch_20261022T214813Z/a0_r2"
+   },
+   "44a72348": {
+    "arm": "A0",
+    "dir": "data/ami_eval/a1_smoke/el2020_batch_20261022T214813Z/a0_r3"
+   },
+   "f03636da": {
+    "arm": "A1",
+    "dir": "data/ami_eval/a1_smoke/el2020_a1_20261022T211107Z"
+   },
+   "15995a72": {
+    "arm": "A1",
+    "dir": "data/ami_eval/a1_smoke/el2020_batch_20261022T214813Z/a1_r2"
+   },
+   "4e642b44": {
+    "arm": "A1",
+    "dir": "data/ami_eval/a1_smoke/el2020_batch_20261022T214813Z/a1_r3"
+   }
+  }
+ },
+ "v1_decisions": 670,
+ "audited": 479,
+ "by_role": {
+  "e_no_carry": 286,
+  "e_wrong_form_carrier": 47,
+  "r_carrier": 134,
+  "r_rival": 16,
+  "r_shared_key_carrier": 11
+ },
+ "values_by_role": {
+  "e_no_carry": 31,
+  "e_wrong_form_carrier": 19,
+  "r_carrier": 46,
+  "r_rival": 13,
+  "r_shared_key_carrier": 2
+ },
+ "with_two_roles": 15,
+ "open_decisions": {
+  "AL-1": {
+   "status": "adopted: b",
+   "recommended": "b",
+   "options": {
+    "a": {
+     "adds_items": 0,
+     "listed_items_gaining_a_role": 0
+    },
+    "b": {
+     "adds_items": 44,
+     "listed_items_gaining_a_role": 3
+    },
+    "b_prime": {
+     "adds_items": 15,
+     "listed_items_gaining_a_role": 1
+    }
+   },
+   "candidates": [
+    {
+     "id": "9da8f18af552",
+     "fact_id": "F22",
+     "text": "It is pretty working",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "f03636da:F22@1",
+       "f03636da:F22@2",
+       "f03636da:F22@3"
+      ]
+     }
+    },
+    {
+     "id": "591152af502d",
+     "fact_id": "F23",
+     "text": "Czech ASR into other thing and English ASR into all the things, possibly French ASR too",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "48405ba5:F23@1",
+       "48405ba5:F23@2",
+       "48405ba5:F23@3"
+      ]
+     }
+    },
+    {
+     "id": "9b2daf19a7fa",
+     "fact_id": "F23",
+     "text": "Czech ASR, English ASR, and possibly French ASR variants",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "144b6dec:F23@1",
+       "144b6dec:F23@2",
+       "144b6dec:F23@3"
+      ]
+     }
+    },
+    {
+     "id": "82a6dc7eeeff",
+     "fact_id": "F25",
+     "text": "one simple script to run PERSON7 ASR on the cluster in the correct way",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "144b6dec:F25@1",
+       "15995a72:F25@1",
+       "4e642b44:F25@1",
+       "f03636da:F25@1"
+      ]
+     }
+    },
+    {
+     "id": "7d5efab571c6",
+     "fact_id": "F25",
+     "text": "one simple script to run the PERSON7 ASR on the cluster in the correct way",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "48405ba5:F25@1"
+      ]
+     }
+    },
+    {
+     "id": "f51e7e2584f8",
+     "fact_id": "F25",
+     "text": "one simple script to run the [PERSON7] ASR on the cluster in the correct way",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "44a72348:F25@1"
+      ]
+     }
+    },
+    {
+     "id": "59802e6eda7d",
+     "fact_id": "F31",
+     "text": "having our own ASRs",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "48405ba5:F31@1",
+       "48405ba5:F31@2",
+       "48405ba5:F31@3"
+      ]
+     }
+    },
+    {
+     "id": "7d2f7a122dcf",
+     "fact_id": "F61",
+     "text": "not to use the [PROJECT5] test set; put this mainly to training data",
+     "added_by": [
+      "b",
+      "b_prime"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "15995a72:F61@2",
+       "15995a72:F61@3"
+      ]
+     }
+    },
+    {
+     "id": "c59123ba2e2c",
+     "fact_id": "F61",
+     "text": "not use [PROJECT5] test set; put it mainly to training data",
+     "added_by": [
+      "b",
+      "b_prime"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "4e642b44:F61@2",
+       "4e642b44:F61@3"
+      ]
+     }
+    },
+    {
+     "id": "659df12145a6",
+     "fact_id": "F62",
+     "text": "create the organization of the test/training data on disk, not in version control, because files will be bigger",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "144b6dec:F62@2",
+       "144b6dec:F62@3"
+      ]
+     }
+    },
+    {
+     "id": "e3e75b6434d5",
+     "fact_id": "F62",
+     "text": "create the organization on disk rather than in version control because files will be bigger",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "15995a72:F62@2",
+       "15995a72:F62@3"
+      ]
+     }
+    },
+    {
+     "id": "96008a156c16",
+     "fact_id": "F64",
+     "text": "continue past TSV upload to find annotators to process the files",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "48405ba5:F64@2",
+       "48405ba5:F64@3"
+      ]
+     }
+    },
+    {
+     "id": "8b3979b825b3",
+     "fact_id": "F64",
+     "text": "find annotators to process the files after TSV upload",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "f03636da:F64@2",
+       "f03636da:F64@3"
+      ]
+     }
+    },
+    {
+     "id": "021043dad73f",
+     "fact_id": "F64",
+     "text": "find annotators who will process the files",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "15995a72:F64@2",
+       "15995a72:F64@3"
+      ]
+     }
+    },
+    {
+     "id": "a8d88be72d7a",
+     "fact_id": "F67",
+     "text": "23rd",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "48405ba5:F67@2",
+       "48405ba5:F67@3",
+       "4e642b44:F67@2",
+       "4e642b44:F67@3"
+      ]
+     }
+    },
+    {
+     "id": "ba35e5dc35db",
+     "fact_id": "F67",
+     "text": "after the edible SLT, around the 23rd",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "144b6dec:F67@2",
+       "144b6dec:F67@3",
+       "15995a72:F67@2",
+       "15995a72:F67@3",
+       "44a72348:F67@2",
+       "44a72348:F67@3",
+       "f03636da:F67@2",
+       "f03636da:F67@3"
+      ]
+     }
+    },
+    {
+     "id": "c88733e5e754",
+     "fact_id": "F83",
+     "text": "paragraph view subtitle display by 11 or before",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "15995a72:F83@3"
+      ]
+     }
+    },
+    {
+     "id": "4d5741325b2a",
+     "fact_id": "F84",
+     "text": "Czech ASR displaying Czech, English, and German",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "f03636da:F84@3"
+      ]
+     }
+    },
+    {
+     "id": "9db1cb7a0796",
+     "fact_id": "F84",
+     "text": "Czech ASR into displaying Czech, English and German",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "15995a72:F84@3",
+       "4e642b44:F84@3"
+      ]
+     }
+    },
+    {
+     "id": "5034e46c5a2f",
+     "fact_id": "F84",
+     "text": "Czech ASR into displaying Czech, English, and German",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "44a72348:F84@3"
+      ]
+     }
+    },
+    {
+     "id": "930bad62ce30",
+     "fact_id": "F84",
+     "text": "Czech ASR pipeline displaying Czech, English, and German",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "144b6dec:F84@3"
+      ]
+     }
+    },
+    {
+     "id": "0f514180bc74",
+     "fact_id": "F84",
+     "text": "Czech, English, and German",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "15995a72:F84@3"
+      ]
+     }
+    },
+    {
+     "id": "211a22755614",
+     "fact_id": "F84",
+     "text": "English and German translation in addition to Czech",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "144b6dec:F84@3"
+      ]
+     }
+    },
+    {
+     "id": "f6ed4c8ee0ee",
+     "fact_id": "F91",
+     "text": "separate section in PERSON16's paper",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "15995a72:F91@3",
+       "4e642b44:F91@3"
+      ]
+     }
+    },
+    {
+     "id": "1e7df1e196c7",
+     "fact_id": "F91",
+     "text": "separate section in [PERSON16]'s Overleaf paper",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "44a72348:F91@3"
+      ]
+     }
+    },
+    {
+     "id": "340a256ebdd8",
+     "fact_id": "F93",
+     "text": "finalize the runs",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "144b6dec:F93@3"
+      ]
+     }
+    },
+    {
+     "id": "e67296655a28",
+     "fact_id": "F93",
+     "text": "finalize the runs after the deadline",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "48405ba5:F93@3"
+      ]
+     }
+    },
+    {
+     "id": "b8f9b4d9c498",
+     "fact_id": "F93",
+     "text": "other MT runs after the deadline",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "44a72348:F93@3",
+       "f03636da:F93@3"
+      ]
+     }
+    },
+    {
+     "id": "709273caef81",
+     "fact_id": "F93",
+     "text": "other MT runs to make the tables complete in the paper",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "4e642b44:F93@3"
+      ]
+     }
+    },
+    {
+     "id": "bf4cc929cf08",
+     "fact_id": "F93",
+     "text": "run the other MT after the deadline to make the tables complete",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "144b6dec:F93@3"
+      ]
+     }
+    },
+    {
+     "id": "6b960c3a28af",
+     "fact_id": "F93",
+     "text": "tables should be made complete by finalizing all runs",
+     "added_by": [
+      "b"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "44a72348:F93@3",
+       "f03636da:F93@3"
+      ]
+     }
+    },
+    {
+     "id": "e1a792ef1bd7",
+     "fact_id": "R01",
+     "text": "PERSON2 will send the document by tonight",
+     "added_by": [
+      "b",
+      "b_prime"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "f03636da:R01@0",
+       "f03636da:R01@1",
+       "f03636da:R01@2",
+       "f03636da:R01@3"
+      ]
+     }
+    },
+    {
+     "id": "4d66c740590a",
+     "fact_id": "R01",
+     "text": "PERSON2 will send the prepared material by tonight",
+     "added_by": [
+      "b",
+      "b_prime"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "144b6dec:R01@0",
+       "144b6dec:R01@1",
+       "144b6dec:R01@2",
+       "144b6dec:R01@3",
+       "15995a72:R01@0",
+       "15995a72:R01@1",
+       "15995a72:R01@2",
+       "15995a72:R01@3",
+       "4e642b44:R01@0",
+       "4e642b44:R01@1",
+       "4e642b44:R01@2",
+       "4e642b44:R01@3"
+      ]
+     }
+    },
+    {
+     "id": "70e08fdb9dc3",
+     "fact_id": "R01",
+     "text": "sending the update by tonight",
+     "added_by": [
+      "b",
+      "b_prime"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "44a72348:R01@0",
+       "44a72348:R01@1",
+       "44a72348:R01@2",
+       "44a72348:R01@3"
+      ]
+     }
+    },
+    {
+     "id": "ad59622277fc",
+     "fact_id": "R03",
+     "text": "Antrecorp test sets",
+     "added_by": [
+      "b",
+      "b_prime"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "144b6dec:R03@2",
+       "144b6dec:R03@3",
+       "44a72348:R03@2",
+       "44a72348:R03@3"
+      ]
+     }
+    },
+    {
+     "id": "a24e5013519e",
+     "fact_id": "R03",
+     "text": "Antrecorp test sets considered should not use",
+     "added_by": [
+      "b",
+      "b_prime"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "48405ba5:R03@2",
+       "48405ba5:R03@3",
+       "4e642b44:R03@2",
+       "4e642b44:R03@3",
+       "f03636da:R03@2",
+       "f03636da:R03@3"
+      ]
+     }
+    },
+    {
+     "id": "86a85829d4d4",
+     "fact_id": "R03",
+     "text": "use Antrecorp test sets",
+     "added_by": [
+      "b",
+      "b_prime"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "15995a72:R03@2",
+       "15995a72:R03@3"
+      ]
+     }
+    },
+    {
+     "id": "365dcc854aef",
+     "fact_id": "R04",
+     "text": "mainly training data, not the [PROJECT5] test set",
+     "added_by": [
+      "b",
+      "b_prime"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "144b6dec:R04@2",
+       "144b6dec:R04@3",
+       "48405ba5:R04@2",
+       "48405ba5:R04@3",
+       "f03636da:R04@2",
+       "f03636da:R04@3"
+      ]
+     }
+    },
+    {
+     "id": "939980ad8fcb",
+     "fact_id": "R04",
+     "text": "put mainly to training data, not to the [PROJECT5] test set",
+     "added_by": [
+      "b",
+      "b_prime"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "44a72348:R04@2",
+       "44a72348:R04@3"
+      ]
+     }
+    },
+    {
+     "id": "01cf1b1fdde7",
+     "fact_id": "R07",
+     "text": "Use the sound as the source of truth and resolve EAF/OSTT mismatches by listening again rather than flipping a coin",
+     "added_by": [
+      "b",
+      "b_prime"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "44a72348:R07@3"
+      ]
+     }
+    },
+    {
+     "id": "3f7855710c69",
+     "fact_id": "R07",
+     "text": "correct EAF files based on the OSTT files when EAF files are wrong",
+     "added_by": [
+      "b",
+      "b_prime"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "44a72348:R07@3"
+      ]
+     }
+    },
+    {
+     "id": "90d17ca47e68",
+     "fact_id": "R07",
+     "text": "correcting EAF files based on OSTT files",
+     "added_by": [
+      "b",
+      "b_prime"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "44a72348:R07@3"
+      ]
+     }
+    },
+    {
+     "id": "14dd1aa97c8a",
+     "fact_id": "R08",
+     "text": "write a third paper",
+     "added_by": [
+      "b",
+      "b_prime"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "15995a72:R08@3",
+       "44a72348:R08@3",
+       "48405ba5:R08@3",
+       "4e642b44:R08@3",
+       "f03636da:R08@3"
+      ]
+     }
+    },
+    {
+     "id": "821064a65bfb",
+     "fact_id": "R08",
+     "text": "writing a third paper",
+     "added_by": [
+      "b",
+      "b_prime"
+     ],
+     "rows_by_role": {
+      "e_wrong_form_carrier": [
+       "144b6dec:R08@3"
+      ]
+     }
+    }
+   ]
+  },
+  "AL-3": {
+   "status": "adopted: a_shared",
+   "recommended": "a_shared",
+   "options": {
+    "a": {
+     "adds_items": 0,
+     "listed_items_gaining_a_role": 0
+    },
+    "a_shared": {
+     "adds_items": 7,
+     "listed_items_gaining_a_role": 4
+    },
+    "b_sole": {
+     "adds_items": 34,
+     "listed_items_gaining_a_role": 4
+    },
+    "b_all": {
+     "adds_items": 58,
+     "listed_items_gaining_a_role": 4
+    }
+   },
+   "candidates": [
+    {
+     "id": "61cafe0e563e",
+     "fact_id": "F02",
+     "text": "20th of April",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "4e642b44:F02@0",
+       "4e642b44:F02@1",
+       "4e642b44:F02@2",
+       "4e642b44:F02@3",
+       "f03636da:F02@0",
+       "f03636da:F02@1",
+       "f03636da:F02@2",
+       "f03636da:F02@3"
+      ]
+     }
+    },
+    {
+     "id": "a70599b1f4a9",
+     "fact_id": "F09",
+     "text": "final hypothesis only",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "144b6dec:F09@0",
+       "144b6dec:F09@1",
+       "144b6dec:F09@2",
+       "144b6dec:F09@3",
+       "15995a72:F09@0",
+       "15995a72:F09@1",
+       "15995a72:F09@2",
+       "15995a72:F09@3"
+      ]
+     }
+    },
+    {
+     "id": "e0ac94ac08aa",
+     "fact_id": "F09",
+     "text": "only the final hypothesis is evaluated",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "44a72348:F09@0",
+       "44a72348:F09@1",
+       "44a72348:F09@2",
+       "44a72348:F09@3"
+      ]
+     }
+    },
+    {
+     "id": "82a6dc7eeeff",
+     "fact_id": "F25",
+     "text": "one simple script to run PERSON7 ASR on the cluster in the correct way",
+     "added_by": [
+      "a_shared",
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_shared_key_carrier": [
+       "15995a72:F58@2",
+       "15995a72:F58@3",
+       "f03636da:F58@2",
+       "f03636da:F58@3"
+      ]
+     }
+    },
+    {
+     "id": "f51e7e2584f8",
+     "fact_id": "F25",
+     "text": "one simple script to run the [PERSON7] ASR on the cluster in the correct way",
+     "added_by": [
+      "a_shared",
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_shared_key_carrier": [
+       "44a72348:F58@3"
+      ]
+     }
+    },
+    {
+     "id": "abe81fb49781",
+     "fact_id": "F26",
+     "text": "cleaned for 21 ORGANIZATION2 languages from the European website",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "144b6dec:F26@2",
+       "144b6dec:F26@3"
+      ]
+     }
+    },
+    {
+     "id": "2631b2c7f168",
+     "fact_id": "F26",
+     "text": "data cleaning for 21 ORGANIZATION2 languages",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "15995a72:F26@2",
+       "15995a72:F26@3"
+      ]
+     }
+    },
+    {
+     "id": "cfe759ad544e",
+     "fact_id": "F28",
+     "text": "readme with the original link",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "144b6dec:F28@1",
+       "144b6dec:F28@2",
+       "144b6dec:F28@3"
+      ]
+     }
+    },
+    {
+     "id": "fb2abf3350e9",
+     "fact_id": "F31",
+     "text": "PERSON4 owns English ASR implementation training",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "4e642b44:F31@1",
+       "4e642b44:F31@2",
+       "4e642b44:F31@3"
+      ]
+     }
+    },
+    {
+     "id": "56500cd40191",
+     "fact_id": "F31",
+     "text": "PERSON8 owns PROJECT6-based ASR training",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "4e642b44:F31@1",
+       "4e642b44:F31@2",
+       "4e642b44:F31@3"
+      ]
+     }
+    },
+    {
+     "id": "9d31b2520a19",
+     "fact_id": "F35",
+     "text": "allowed corpora for the constrained run",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "f03636da:F35@1"
+      ]
+     }
+    },
+    {
+     "id": "87477e4bd5e7",
+     "fact_id": "F35",
+     "text": "limit the run to corpora allowed for the constrained run when limiting ourselves",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "48405ba5:F35@1"
+      ]
+     }
+    },
+    {
+     "id": "b987d35cdc6a",
+     "fact_id": "F36",
+     "text": "pass silence-token information to PERSON3 for the segmenter model",
+     "added_by": [
+      "a_shared",
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "f03636da:F36@1"
+      ],
+      "r_shared_key_carrier": [
+       "f03636da:F59@3"
+      ]
+     }
+    },
+    {
+     "id": "ae8258e205df",
+     "fact_id": "F36",
+     "text": "passing silence-duration information to PERSON3 for the segmenter model",
+     "added_by": [
+      "a_shared",
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "44a72348:F36@1"
+      ],
+      "r_shared_key_carrier": [
+       "44a72348:F59@2"
+      ]
+     }
+    },
+    {
+     "id": "c27ae522e1cf",
+     "fact_id": "F36",
+     "text": "silence-token duration considered duration threshold as end-of-sentence indicator",
+     "added_by": [
+      "a_shared",
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "f03636da:F36@1"
+      ],
+      "r_shared_key_carrier": [
+       "f03636da:F59@3"
+      ]
+     }
+    },
+    {
+     "id": "a0e26c1ec7c7",
+     "fact_id": "F36",
+     "text": "use silence-token duration to help segmentation/punctuation of output",
+     "added_by": [
+      "a_shared",
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "f03636da:F36@1"
+      ],
+      "r_shared_key_carrier": [
+       "f03636da:F59@3"
+      ]
+     }
+    },
+    {
+     "id": "dd3b366cfe27",
+     "fact_id": "F36",
+     "text": "using silence-token duration after each word to help segmentation/punctuation when not running online",
+     "added_by": [
+      "a_shared",
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "44a72348:F36@1"
+      ],
+      "r_shared_key_carrier": [
+       "44a72348:F59@2"
+      ]
+     }
+    },
+    {
+     "id": "372358f3fd7a",
+     "fact_id": "F39",
+     "text": "monolingual data in all 42 languages translated to English",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "44a72348:F39@1",
+       "44a72348:F39@2",
+       "44a72348:F39@3"
+      ]
+     }
+    },
+    {
+     "id": "cc61b48c0666",
+     "fact_id": "F53",
+     "text": "baseline run now, improve later if extra time",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "f03636da:F53@2",
+       "f03636da:F53@3"
+      ]
+     }
+    },
+    {
+     "id": "f9a60ed4b840",
+     "fact_id": "F56",
+     "text": "Overleaf is empty",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "144b6dec:F56@2"
+      ]
+     }
+    },
+    {
+     "id": "951006abd936",
+     "fact_id": "F56",
+     "text": "created but empty",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "15995a72:F56@2",
+       "f03636da:F56@2"
+      ]
+     }
+    },
+    {
+     "id": "d78b7f6ceb44",
+     "fact_id": "F59",
+     "text": "working on Czech segmentor based on pause durations",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "144b6dec:F59@2",
+       "144b6dec:F59@3"
+      ]
+     }
+    },
+    {
+     "id": "78c36ef51205",
+     "fact_id": "F62",
+     "text": "on the disc, not version",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "4e642b44:F62@2",
+       "4e642b44:F62@3",
+       "f03636da:F62@2",
+       "f03636da:F62@3"
+      ]
+     }
+    },
+    {
+     "id": "12f1b56d1ada",
+     "fact_id": "F69",
+     "text": "April 18 deployment may be at risk",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "44a72348:F69@3"
+      ]
+     }
+    },
+    {
+     "id": "b66b6db60ad1",
+     "fact_id": "F81",
+     "text": "3 ORGANIZATION6 online ASRs",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "15995a72:F81@3",
+       "4e642b44:F81@3"
+      ]
+     }
+    },
+    {
+     "id": "c4f1a56c96d3",
+     "fact_id": "F81",
+     "text": "3 [ORGANIZATION6] online ASRs",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "44a72348:F81@3"
+      ]
+     }
+    },
+    {
+     "id": "4516ce383e1c",
+     "fact_id": "F81",
+     "text": "3 by [ORGANIZATION6]",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "144b6dec:F81@3",
+       "4e642b44:F81@3"
+      ]
+     }
+    },
+    {
+     "id": "54e864ccf615",
+     "fact_id": "F81",
+     "text": "the 3 by ORGANIZATION6",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "15995a72:F81@3"
+      ]
+     }
+    },
+    {
+     "id": "d04ed186ef98",
+     "fact_id": "F82",
+     "text": "average of the scores of the 3 ASRs and pick the best",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "15995a72:F82@3"
+      ]
+     }
+    },
+    {
+     "id": "de8a9d3435a5",
+     "fact_id": "F82",
+     "text": "average the scores of the 3 ASRs and pick the best",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "48405ba5:F82@3",
+       "4e642b44:F82@3",
+       "f03636da:F82@3"
+      ]
+     }
+    },
+    {
+     "id": "9c000dd7895d",
+     "fact_id": "F82",
+     "text": "best average of the scores of the 3 ASRs",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "144b6dec:F82@3"
+      ]
+     }
+    },
+    {
+     "id": "e3452901a075",
+     "fact_id": "F83",
+     "text": "paragraph view",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "44a72348:F83@3",
+       "4e642b44:F83@3"
+      ]
+     }
+    },
+    {
+     "id": "f86091b60610",
+     "fact_id": "F83",
+     "text": "paragraph view for subtitle display by 11 or before",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "48405ba5:F83@3"
+      ]
+     }
+    },
+    {
+     "id": "0532157c51eb",
+     "fact_id": "F83",
+     "text": "paragraph view instead of subtitles",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "144b6dec:F83@3"
+      ]
+     }
+    },
+    {
+     "id": "d8fb4f393b20",
+     "fact_id": "F85",
+     "text": "If the audio is understood, choose the correct thing from the sound",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "f03636da:F85@3"
+      ]
+     }
+    },
+    {
+     "id": "74d966a0e257",
+     "fact_id": "F85",
+     "text": "Trust only the sound, not the OSTT, to determine what is correct",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "44a72348:F85@3"
+      ]
+     }
+    },
+    {
+     "id": "8fe2467aff9d",
+     "fact_id": "F85",
+     "text": "Use mismatches to locate spots and re-listen to the sound",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "48405ba5:F85@3"
+      ]
+     }
+    },
+    {
+     "id": "0ddc5cde036b",
+     "fact_id": "F85",
+     "text": "Use the sound as the source of truth and resolve EAF/OSTT mismatches by listening again rather than flipping a coin",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "44a72348:F85@3"
+      ]
+     }
+    },
+    {
+     "id": "77a6ed0a52ca",
+     "fact_id": "F85",
+     "text": "Use the sound to resolve transcription mismatches rather than flipping a coin",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "f03636da:F85@3"
+      ]
+     }
+    },
+    {
+     "id": "a14a8fbb9b84",
+     "fact_id": "F85",
+     "text": "hear again the sound to find the spots",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "144b6dec:F85@3"
+      ]
+     }
+    },
+    {
+     "id": "f1b2136dfa3f",
+     "fact_id": "F85",
+     "text": "hear again the sound to resolve mismatches",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "15995a72:F85@3"
+      ]
+     }
+    },
+    {
+     "id": "c6c728f6aefa",
+     "fact_id": "F85",
+     "text": "sound",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "144b6dec:F85@3",
+       "15995a72:F85@3",
+       "48405ba5:F85@3",
+       "4e642b44:F85@3",
+       "f03636da:F85@3"
+      ]
+     }
+    },
+    {
+     "id": "2f53719b4503",
+     "fact_id": "F85",
+     "text": "use mismatches to find spots and listen again to the sound",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "4e642b44:F85@3"
+      ]
+     }
+    },
+    {
+     "id": "6b78f1e0edbb",
+     "fact_id": "F86",
+     "text": "For each mismatch, choose the EAF and modify the OSTT according to the EAF when the audio is not understood",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "f03636da:F86@3"
+      ]
+     }
+    },
+    {
+     "id": "d623f6fedbeb",
+     "fact_id": "F88",
+     "text": "still imperfect and needs improvement",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "144b6dec:F88@3",
+       "48405ba5:F88@3"
+      ]
+     }
+    },
+    {
+     "id": "5809fd9e559e",
+     "fact_id": "F89",
+     "text": "4 to 8 pages",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "144b6dec:F89@3"
+      ]
+     }
+    },
+    {
+     "id": "66d9270cccd3",
+     "fact_id": "F93",
+     "text": "finalizing the runs",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "15995a72:F93@3"
+      ]
+     }
+    },
+    {
+     "id": "e0429330becb",
+     "fact_id": "R02",
+     "text": "online aspect",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "144b6dec:R02@1",
+       "144b6dec:R02@2",
+       "144b6dec:R02@3",
+       "15995a72:R02@1",
+       "15995a72:R02@2",
+       "15995a72:R02@3",
+       "44a72348:R02@1",
+       "44a72348:R02@2",
+       "44a72348:R02@3",
+       "48405ba5:R02@1",
+       "48405ba5:R02@2",
+       "48405ba5:R02@3",
+       "4e642b44:R02@1",
+       "4e642b44:R02@2",
+       "4e642b44:R02@3"
+      ]
+     }
+    },
+    {
+     "id": "1bace2109592",
+     "fact_id": "R04",
+     "text": "not to use the [PROJECT5] test set; put this mainly to training data",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "15995a72:R04@2",
+       "15995a72:R04@3"
+      ]
+     }
+    },
+    {
+     "id": "49df8e5e541c",
+     "fact_id": "R04",
+     "text": "not use [PROJECT5] test set; put it mainly to training data",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "4e642b44:R04@2",
+       "4e642b44:R04@3"
+      ]
+     }
+    },
+    {
+     "id": "5211ce8a5554",
+     "fact_id": "R05",
+     "text": "TPU as the only solution",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "15995a72:R05@2",
+       "15995a72:R05@3",
+       "44a72348:R05@2",
+       "44a72348:R05@3",
+       "48405ba5:R05@2",
+       "48405ba5:R05@3",
+       "4e642b44:R05@2",
+       "4e642b44:R05@3"
+      ]
+     }
+    },
+    {
+     "id": "6ce78eab7c31",
+     "fact_id": "R06",
+     "text": "Antrecorp",
+     "added_by": [
+      "b_all",
+      "b_sole"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "144b6dec:R06@3",
+       "15995a72:R06@3",
+       "44a72348:R06@3",
+       "48405ba5:R06@3",
+       "4e642b44:R06@3",
+       "f03636da:R06@3"
+      ]
+     }
+    },
+    {
+     "id": "6c950c87daf0",
+     "fact_id": "R07",
+     "text": "OSTT files as correction basis rejected OSTT files",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "4e642b44:R07@3"
+      ]
+     }
+    },
+    {
+     "id": "b7c890ba1315",
+     "fact_id": "R07",
+     "text": "OSTT files not trusted for correction OSTT as basis for deciding correctness",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "48405ba5:R07@3"
+      ]
+     }
+    },
+    {
+     "id": "546b529e7ca7",
+     "fact_id": "R07",
+     "text": "correct EAF files based on OSTT files",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "4e642b44:R07@3"
+      ]
+     }
+    },
+    {
+     "id": "42fadd8b8caa",
+     "fact_id": "R07",
+     "text": "flip a coin to choose between EAF and OSTT",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "4e642b44:R07@3"
+      ]
+     }
+    },
+    {
+     "id": "0a7bef55edab",
+     "fact_id": "R07",
+     "text": "trust OSTT files more than EAF files when EAF is wrong",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "4e642b44:R07@3"
+      ]
+     }
+    },
+    {
+     "id": "16cdb0d063a1",
+     "fact_id": "R07",
+     "text": "trusting OSTT for correctness",
+     "added_by": [
+      "b_all"
+     ],
+     "rows_by_role": {
+      "r_pass_carrier": [
+       "144b6dec:R07@3",
+       "15995a72:R07@3"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "items": [
+  {
+   "id": "c902f61c24cb",
+   "fact_id": "F01",
+   "text": "30 minutes or 28 minutes",
+   "roles": [
+    "r_rival"
+   ],
+   "decides_rows": [
+    "44a72348:F01@1",
+    "44a72348:F01@2",
+    "44a72348:F01@3",
+    "48405ba5:F01@1",
+    "48405ba5:F01@2",
+    "48405ba5:F01@3",
+    "4e642b44:F01@1",
+    "4e642b44:F01@2",
+    "4e642b44:F01@3"
+   ],
+   "recorded_result_rows": [
+    "44a72348:F01@1",
+    "48405ba5:F01@1",
+    "4e642b44:F01@1"
+   ]
+  },
+  {
+   "id": "15f5824db08b",
+   "fact_id": "F01",
+   "text": "30 minutes plus 15 minutes slack, closing at quarter to 5",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F01@1",
+    "44a72348:F01@2",
+    "44a72348:F01@3",
+    "48405ba5:F01@1",
+    "48405ba5:F01@2",
+    "48405ba5:F01@3"
+   ]
+  },
+  {
+   "id": "5c982820da01",
+   "fact_id": "F01",
+   "text": "30 minutes plus 15 minutes slack; close at quarter to 5",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F01@2",
+    "15995a72:F01@3",
+    "4e642b44:F01@1",
+    "4e642b44:F01@2",
+    "4e642b44:F01@3",
+    "f03636da:F01@1",
+    "f03636da:F01@2",
+    "f03636da:F01@3"
+   ]
+  },
+  {
+   "id": "fde8c8743d34",
+   "fact_id": "F01",
+   "text": "30 minutes, actually 28 minutes",
+   "roles": [
+    "r_rival"
+   ],
+   "decides_rows": [
+    "f03636da:F01@1",
+    "f03636da:F01@2",
+    "f03636da:F01@3"
+   ],
+   "recorded_result_rows": [
+    "f03636da:F01@1"
+   ]
+  },
+  {
+   "id": "91929342064c",
+   "fact_id": "F02",
+   "text": "April 20",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F02@3",
+    "44a72348:F02@3"
+   ]
+  },
+  {
+   "id": "1d0ff6e99f35",
+   "fact_id": "F02",
+   "text": "deadline is April 20",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F02@2",
+    "144b6dec:F02@3"
+   ]
+  },
+  {
+   "id": "1358226aa62b",
+   "fact_id": "F02",
+   "text": "twentieth of April",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F02@3"
+   ]
+  },
+  {
+   "id": "1b8f9ac025dd",
+   "fact_id": "F03",
+   "text": "MP3 files for reasonably small files",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "2a887f436184",
+   "fact_id": "F03",
+   "text": "MP3 files if reasonably small; otherwise cluster links plus a readme/file with locations",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F03@1",
+    "f03636da:F03@2",
+    "f03636da:F03@3"
+   ]
+  },
+  {
+   "id": "26189e33327b",
+   "fact_id": "F03",
+   "text": "MP3 files that are reasonably small",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "89a1c33b2f47",
+   "fact_id": "F03",
+   "text": "MP3 files when reasonably small",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "15ab238b4931",
+   "fact_id": "F03",
+   "text": "store MP3 files if reasonably small",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "b924433af2cc",
+   "fact_id": "F03",
+   "text": "store MP3 files in the GitHub repository when reasonably small",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "c87b1a7faeed",
+   "fact_id": "F03",
+   "text": "uploading only links instead of files for small MP3s",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "9ae57ad6ff8b",
+   "fact_id": "F04",
+   "text": "include one section per language",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "c62c77e4e736",
+   "fact_id": "F04",
+   "text": "one section per language",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "0076e926b7bd",
+   "fact_id": "F04",
+   "text": "the document the annotators have also seen",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F04@1",
+    "15995a72:F04@2",
+    "15995a72:F04@3"
+   ]
+  },
+  {
+   "id": "262933d39875",
+   "fact_id": "F04",
+   "text": "the document the annotators have seen",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F04@2",
+    "f03636da:F04@3"
+   ]
+  },
+  {
+   "id": "266f05d5b74e",
+   "fact_id": "F05",
+   "text": "annotators owns manual refinement",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "631adc331817",
+   "fact_id": "F05",
+   "text": "annotators should do manual refinement",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "a16dd7f8a24e",
+   "fact_id": "F05",
+   "text": "annotators should do the manual refinement after automated jobs",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F05@1",
+    "15995a72:F05@2",
+    "15995a72:F05@3"
+   ]
+  },
+  {
+   "id": "4f08f4da5ab0",
+   "fact_id": "F05",
+   "text": "automated jobs",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "648afb13e086",
+   "fact_id": "F05",
+   "text": "automated jobs handled by automation",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "4d49a98d5342",
+   "fact_id": "F05",
+   "text": "automated jobs should be done by the system",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "16575a998c57",
+   "fact_id": "F05",
+   "text": "automated jobs should be done first",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "8ce7f9d28346",
+   "fact_id": "F05",
+   "text": "automated jobs should be done first, with manual refinement afterward",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "f4c481f69104",
+   "fact_id": "F05",
+   "text": "automated jobs should be done first, with manual refinement handled afterward",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "8b696c89de0e",
+   "fact_id": "F05",
+   "text": "do the automated jobs first",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "64f4e77e38c8",
+   "fact_id": "F06",
+   "text": "42 languages",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F06@2",
+    "144b6dec:F06@3",
+    "15995a72:F06@1",
+    "15995a72:F06@2",
+    "15995a72:F06@3",
+    "4e642b44:F06@2",
+    "4e642b44:F06@3",
+    "f03636da:F06@2",
+    "f03636da:F06@3"
+   ]
+  },
+  {
+   "id": "c50d19cf5515",
+   "fact_id": "F06",
+   "text": "42-language model",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F06@2",
+    "144b6dec:F06@3",
+    "15995a72:F06@0",
+    "15995a72:F06@1",
+    "15995a72:F06@2",
+    "15995a72:F06@3",
+    "44a72348:F06@2",
+    "44a72348:F06@3",
+    "48405ba5:F06@1",
+    "48405ba5:F06@2",
+    "48405ba5:F06@3",
+    "f03636da:F06@0",
+    "f03636da:F06@2",
+    "f03636da:F06@3"
+   ]
+  },
+  {
+   "id": "99a2fe4ea7b0",
+   "fact_id": "F06",
+   "text": "all 42 languages",
+   "roles": [
+    "r_rival"
+   ],
+   "decides_rows": [
+    "48405ba5:F06@1",
+    "48405ba5:F06@2",
+    "48405ba5:F06@3"
+   ],
+   "recorded_result_rows": [
+    "48405ba5:F06@1"
+   ]
+  },
+  {
+   "id": "9eb1e8f7fce5",
+   "fact_id": "F06",
+   "text": "monolingual data in all 42 languages translated to English",
+   "roles": [
+    "r_rival"
+   ],
+   "decides_rows": [
+    "44a72348:F06@2",
+    "44a72348:F06@3"
+   ],
+   "recorded_result_rows": []
+  },
+  {
+   "id": "c0f9276a4bcd",
+   "fact_id": "F06",
+   "text": "multilingual model for 42 languages",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F06@2",
+    "44a72348:F06@3",
+    "4e642b44:F06@0",
+    "4e642b44:F06@2",
+    "4e642b44:F06@3"
+   ]
+  },
+  {
+   "id": "78c1de565ff4",
+   "fact_id": "F08",
+   "text": "ASR considered worst component in the pipeline",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F08@1",
+    "15995a72:F08@2",
+    "15995a72:F08@3",
+    "48405ba5:F08@1",
+    "48405ba5:F08@2",
+    "48405ba5:F08@3"
+   ]
+  },
+  {
+   "id": "4a6720b4adb1",
+   "fact_id": "F08",
+   "text": "ASR is the worst component in the pipeline",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "4e642b44:F08@1",
+    "4e642b44:F08@2",
+    "4e642b44:F08@3"
+   ]
+  },
+  {
+   "id": "7d65592050e9",
+   "fact_id": "F08",
+   "text": "ASR seems to be the worst component in the pipeline",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F08@1",
+    "44a72348:F08@2",
+    "44a72348:F08@3"
+   ]
+  },
+  {
+   "id": "37c5d0bfcbcd",
+   "fact_id": "F08",
+   "text": "ASR the worst component in the pipeline",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F08@1",
+    "f03636da:F08@2",
+    "f03636da:F08@3"
+   ]
+  },
+  {
+   "id": "99a935b47ca0",
+   "fact_id": "F09",
+   "text": "only on the final hypothesis",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F09@2",
+    "f03636da:F09@3"
+   ]
+  },
+  {
+   "id": "4f39000185aa",
+   "fact_id": "F10",
+   "text": "masking the last key word of the ASR output from unfinished sentences",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F10@3"
+   ]
+  },
+  {
+   "id": "ea68b7f6fc9d",
+   "fact_id": "F10",
+   "text": "masking the last keyword of the ASR output from unfinished sentences",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F10@3"
+   ]
+  },
+  {
+   "id": "357d8b06b0cb",
+   "fact_id": "F11",
+   "text": "Every Tuesday",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "3d644ce581c2",
+   "fact_id": "F11",
+   "text": "connection to ean seems to work today and is hoped to work regularly every Tuesday",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "a594dce8be01",
+   "fact_id": "F11",
+   "text": "every Tuesday",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "ce9f8861e6c3",
+   "fact_id": "F11",
+   "text": "working today and hoped to work regularly every Tuesday",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "002dccb09d58",
+   "fact_id": "F12",
+   "text": "restart the workers and reserve the full machine for them",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F12@1",
+    "144b6dec:F12@2",
+    "144b6dec:F12@3",
+    "15995a72:F12@1",
+    "15995a72:F12@2",
+    "15995a72:F12@3",
+    "44a72348:F12@1",
+    "44a72348:F12@2",
+    "44a72348:F12@3",
+    "48405ba5:F12@1",
+    "48405ba5:F12@2",
+    "48405ba5:F12@3",
+    "4e642b44:F12@1",
+    "4e642b44:F12@2",
+    "4e642b44:F12@3",
+    "f03636da:F12@1",
+    "f03636da:F12@2",
+    "f03636da:F12@3"
+   ]
+  },
+  {
+   "id": "71e578dd47aa",
+   "fact_id": "F20",
+   "text": "ELAN can be used to segment long audio into sentence-long units long audio segmentation",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F20@1",
+    "15995a72:F20@2",
+    "15995a72:F20@3"
+   ]
+  },
+  {
+   "id": "f2c503200e1c",
+   "fact_id": "F20",
+   "text": "ELAN for long-audio segmentation",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F20@1",
+    "48405ba5:F20@2",
+    "48405ba5:F20@3"
+   ]
+  },
+  {
+   "id": "3431386843e9",
+   "fact_id": "F20",
+   "text": "ELAN for segmenting long audio into sentence-long units",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F20@1",
+    "44a72348:F20@1",
+    "44a72348:F20@2",
+    "44a72348:F20@3",
+    "f03636da:F20@1",
+    "f03636da:F20@2",
+    "f03636da:F20@3"
+   ]
+  },
+  {
+   "id": "9a00f1785390",
+   "fact_id": "F20",
+   "text": "manual segmentation at the word level using ELAN if forced alignment fails",
+   "roles": [
+    "r_rival"
+   ],
+   "decides_rows": [
+    "144b6dec:F20@1"
+   ]
+  },
+  {
+   "id": "88c00ff8713b",
+   "fact_id": "F21",
+   "text": "Forced alignment for identifying words in Czech and English",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F21@1",
+    "f03636da:F21@2",
+    "f03636da:F21@3"
+   ]
+  },
+  {
+   "id": "c368e0b3beaa",
+   "fact_id": "F21",
+   "text": "forced alignment can be used to identify words in Czech and English word-level alignment",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F21@1",
+    "15995a72:F21@2",
+    "15995a72:F21@3"
+   ]
+  },
+  {
+   "id": "6e63613c3083",
+   "fact_id": "F21",
+   "text": "forced alignment for Czech and English word identification",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F21@2",
+    "48405ba5:F21@3"
+   ]
+  },
+  {
+   "id": "b1f41618c820",
+   "fact_id": "F21",
+   "text": "forced alignment for identifying Czech and English words",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F21@1",
+    "144b6dec:F21@2",
+    "144b6dec:F21@3"
+   ]
+  },
+  {
+   "id": "54f8026e37e8",
+   "fact_id": "F21",
+   "text": "forced alignment for identifying words in Czech and English",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F21@1",
+    "44a72348:F21@2",
+    "44a72348:F21@3"
+   ]
+  },
+  {
+   "id": "61edce13ad5f",
+   "fact_id": "F21",
+   "text": "used to identify words in Czech and English",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "4e642b44:F21@3"
+   ]
+  },
+  {
+   "id": "0c130127af7b",
+   "fact_id": "F21",
+   "text": "word-level alignment",
+   "roles": [
+    "r_rival"
+   ],
+   "decides_rows": [
+    "15995a72:F21@1"
+   ]
+  },
+  {
+   "id": "9da8f18af552",
+   "fact_id": "F22",
+   "text": "It is pretty working",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F22@1",
+    "f03636da:F22@2",
+    "f03636da:F22@3"
+   ]
+  },
+  {
+   "id": "d00b6de8746f",
+   "fact_id": "F22",
+   "text": "PERSON3 worked on client audio visualization",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "9e3ad190ed9c",
+   "fact_id": "F22",
+   "text": "PERSON3 worked on client audio visualization setup",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "d845fdf97c59",
+   "fact_id": "F22",
+   "text": "client audio visualization is working pretty well",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F22@1",
+    "15995a72:F22@2",
+    "15995a72:F22@3"
+   ]
+  },
+  {
+   "id": "882c76e47b52",
+   "fact_id": "F22",
+   "text": "connection to ean expected to work regularly every Tuesday",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "610b46ccd624",
+   "fact_id": "F22",
+   "text": "connection to ean works today",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "389d3fac6f0f",
+   "fact_id": "F22",
+   "text": "it is pretty working",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "4e642b44:F22@1",
+    "4e642b44:F22@2",
+    "4e642b44:F22@3"
+   ]
+  },
+  {
+   "id": "c5f97c65dcbe",
+   "fact_id": "F22",
+   "text": "mixed-language but valid sentence with most words in Czech and some in English",
+   "roles": [
+    "e_no_carry",
+    "r_rival"
+   ],
+   "decides_rows": [
+    "15995a72:F22@2",
+    "15995a72:F22@3"
+   ]
+  },
+  {
+   "id": "d83a43aa6196",
+   "fact_id": "F22",
+   "text": "mock conference transcript generation and workshop-related work",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "1fc653ab7cde",
+   "fact_id": "F22",
+   "text": "mock conference transcript generation work",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "96e2c7e2fd61",
+   "fact_id": "F22",
+   "text": "pretty well",
+   "roles": [
+    "e_no_carry",
+    "r_rival"
+   ],
+   "decides_rows": [
+    "15995a72:F22@1",
+    "15995a72:F22@2",
+    "15995a72:F22@3"
+   ]
+  },
+  {
+   "id": "db04911606be",
+   "fact_id": "F22",
+   "text": "pretty working",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F22@1",
+    "144b6dec:F22@2",
+    "144b6dec:F22@3",
+    "44a72348:F22@2",
+    "44a72348:F22@3"
+   ]
+  },
+  {
+   "id": "aadda077ca76",
+   "fact_id": "F22",
+   "text": "setup is pretty working",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F22@1",
+    "48405ba5:F22@2",
+    "48405ba5:F22@3"
+   ]
+  },
+  {
+   "id": "af869b2ef105",
+   "fact_id": "F22",
+   "text": "the cleanup/release setup work",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "620c4da3686c",
+   "fact_id": "F22",
+   "text": "web based",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "f4907bbe4afa",
+   "fact_id": "F22",
+   "text": "web-based server-streamed visualization for live sessions",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "d6a3a97b14cf",
+   "fact_id": "F22",
+   "text": "web-based streaming client/server setup",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "c08cd1e994c8",
+   "fact_id": "F22",
+   "text": "web-based streaming client/server visualizer for live sessions",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "1320256b630e",
+   "fact_id": "F22",
+   "text": "web-based streaming server/client setup",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "ba794e107e21",
+   "fact_id": "F22",
+   "text": "web-based streaming to multiple clients",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "bbe2ae2e94bd",
+   "fact_id": "F22",
+   "text": "web-based streaming visualizer",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "a7c416087654",
+   "fact_id": "F22",
+   "text": "web-based streaming visualizer for live sessions",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "916dedc14194",
+   "fact_id": "F22",
+   "text": "working today",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "366ca0e31beb",
+   "fact_id": "F22",
+   "text": "works offline",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "a6877e27f6b9",
+   "fact_id": "F23",
+   "text": "Czech ASR",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "4769fd5f2f84",
+   "fact_id": "F23",
+   "text": "Czech ASR into displaying Czech, English and German",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "f50477d0c66b",
+   "fact_id": "F23",
+   "text": "Czech ASR into other thing",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "591152af502d",
+   "fact_id": "F23",
+   "text": "Czech ASR into other thing and English ASR into all the things, possibly French ASR too",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F23@1",
+    "48405ba5:F23@2",
+    "48405ba5:F23@3"
+   ]
+  },
+  {
+   "id": "9b2daf19a7fa",
+   "fact_id": "F23",
+   "text": "Czech ASR, English ASR, and possibly French ASR variants",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F23@1",
+    "144b6dec:F23@2",
+    "144b6dec:F23@3"
+   ]
+  },
+  {
+   "id": "65ab8f8d8fbc",
+   "fact_id": "F23",
+   "text": "English ASR",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "cfb2e3d2ef03",
+   "fact_id": "F23",
+   "text": "English ASR into all the things",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "025c9ee01a5a",
+   "fact_id": "F23",
+   "text": "French ASR",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "4ed133ceea95",
+   "fact_id": "F23",
+   "text": "French ASR support",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "d6409b3565fb",
+   "fact_id": "F23",
+   "text": "maybe French ASR",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "640eff036f01",
+   "fact_id": "F23",
+   "text": "release content proposed Czech ASR",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "ba5429bf2dd8",
+   "fact_id": "F23",
+   "text": "release content proposed Czech ASR into other thing",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "030a87ffd031",
+   "fact_id": "F23",
+   "text": "release content proposed English ASR",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "b1c652f389ff",
+   "fact_id": "F23",
+   "text": "release content proposed English ASR into all the things",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "8cc135a8f30d",
+   "fact_id": "F23",
+   "text": "release content proposed French ASR",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "23a03f50ec4b",
+   "fact_id": "F23",
+   "text": "release content selected Czech ASR",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "5a5d7f39edfc",
+   "fact_id": "F23",
+   "text": "release content selected English ASR",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "1ea29fd4d74e",
+   "fact_id": "F23",
+   "text": "release content selected French ASR",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "f8a733b3c5ea",
+   "fact_id": "F23",
+   "text": "release setup proposed Czech ASR into other thing",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "19583795201c",
+   "fact_id": "F23",
+   "text": "release setup proposed English ASR into all the things",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "67c92d70eaf3",
+   "fact_id": "F23",
+   "text": "release setup proposed French ASR",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "128e58677947",
+   "fact_id": "F23",
+   "text": "release setup proposed French ASR support",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "595fec2feb94",
+   "fact_id": "F24",
+   "text": "GitHub issue tracker for cruise control",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F24@1",
+    "144b6dec:F24@2",
+    "144b6dec:F24@3",
+    "15995a72:F24@1",
+    "15995a72:F24@2",
+    "15995a72:F24@3",
+    "44a72348:F24@2",
+    "44a72348:F24@3",
+    "48405ba5:F24@2",
+    "48405ba5:F24@3",
+    "4e642b44:F24@1",
+    "4e642b44:F24@2",
+    "4e642b44:F24@3",
+    "f03636da:F24@3"
+   ]
+  },
+  {
+   "id": "fa883abc17d6",
+   "fact_id": "F24",
+   "text": "GitHub issues",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F24@1",
+    "144b6dec:F24@2",
+    "144b6dec:F24@3"
+   ]
+  },
+  {
+   "id": "f0d4133926bc",
+   "fact_id": "F24",
+   "text": "GitHub issues / issue tracker for cruise control and polishing work",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F24@2",
+    "48405ba5:F24@3"
+   ]
+  },
+  {
+   "id": "ef41e6b268b1",
+   "fact_id": "F24",
+   "text": "GitHub issues / issue tracker workflow",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F24@1",
+    "144b6dec:F24@2",
+    "144b6dec:F24@3"
+   ]
+  },
+  {
+   "id": "2a106b9d7ba9",
+   "fact_id": "F24",
+   "text": "GitHub issues for cruise control",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F24@3"
+   ]
+  },
+  {
+   "id": "994b90e9e4ce",
+   "fact_id": "F24",
+   "text": "be in the issue tracker as well",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F24@3"
+   ]
+  },
+  {
+   "id": "a08d246eadf0",
+   "fact_id": "F24",
+   "text": "issue tracker / GitHub issues for cruise control polishing",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "4e642b44:F24@1",
+    "4e642b44:F24@2",
+    "4e642b44:F24@3"
+   ]
+  },
+  {
+   "id": "44ae38a05995",
+   "fact_id": "F24",
+   "text": "issue tracker / GitHub issues workflow",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F24@3"
+   ]
+  },
+  {
+   "id": "8f931307ba95",
+   "fact_id": "F24",
+   "text": "issue tracker / issue logging workflow",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F24@2",
+    "44a72348:F24@3"
+   ]
+  },
+  {
+   "id": "37369cf575dd",
+   "fact_id": "F24",
+   "text": "recorded in GitHub issue tracker",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F24@2",
+    "48405ba5:F24@3"
+   ]
+  },
+  {
+   "id": "9ab02bd05d04",
+   "fact_id": "F24",
+   "text": "use Bugzilla/GitHub issue tracker for daily issue checking and ticking off tasks",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F24@1",
+    "15995a72:F24@2",
+    "15995a72:F24@3"
+   ]
+  },
+  {
+   "id": "f29153e01323",
+   "fact_id": "F24",
+   "text": "use GitHub issues / Bugzilla-style issue tracker",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F24@2",
+    "44a72348:F24@3"
+   ]
+  },
+  {
+   "id": "a322d65c4fe2",
+   "fact_id": "F24",
+   "text": "using an issue tracker (Bugzilla or GitHub issues) for cruise control/pipeline work",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F24@1",
+    "144b6dec:F24@2",
+    "144b6dec:F24@3"
+   ]
+  },
+  {
+   "id": "243ebd5f84fa",
+   "fact_id": "F25",
+   "text": "Simple preprocessing script for sentence segmentation and sentence alignment",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "82a6dc7eeeff",
+   "fact_id": "F25",
+   "text": "one simple script to run PERSON7 ASR on the cluster in the correct way",
+   "roles": [
+    "e_wrong_form_carrier",
+    "r_shared_key_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F25@1",
+    "15995a72:F25@1",
+    "15995a72:F58@2",
+    "15995a72:F58@3",
+    "4e642b44:F25@1",
+    "f03636da:F25@1",
+    "f03636da:F58@2",
+    "f03636da:F58@3"
+   ]
+  },
+  {
+   "id": "7d5efab571c6",
+   "fact_id": "F25",
+   "text": "one simple script to run the PERSON7 ASR on the cluster in the correct way",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F25@1"
+   ]
+  },
+  {
+   "id": "f51e7e2584f8",
+   "fact_id": "F25",
+   "text": "one simple script to run the [PERSON7] ASR on the cluster in the correct way",
+   "roles": [
+    "e_wrong_form_carrier",
+    "r_shared_key_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F25@1",
+    "44a72348:F58@3"
+   ]
+  },
+  {
+   "id": "34ab2fff7c8b",
+   "fact_id": "F25",
+   "text": "script editing for simple processing adjustments",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "ffe0a8e68c69",
+   "fact_id": "F25",
+   "text": "simple preprocessing script for sentence segmentation",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "a379f9511b98",
+   "fact_id": "F25",
+   "text": "simple preprocessing script for sentence segmentation and sentence alignment",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "6ca742d7da6d",
+   "fact_id": "F25",
+   "text": "simple preprocessing script with some errors",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "bbbd5045616e",
+   "fact_id": "F26",
+   "text": "21 languages test set",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F26@1",
+    "44a72348:F26@3",
+    "48405ba5:F26@3",
+    "4e642b44:F26@2",
+    "4e642b44:F26@3"
+   ]
+  },
+  {
+   "id": "9b2cea814d0f",
+   "fact_id": "F26",
+   "text": "cleaned tested data for 21 ORGANIZATION2 languages from the European website",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F26@3"
+   ]
+  },
+  {
+   "id": "a7286943af70",
+   "fact_id": "F26",
+   "text": "cleaning the tested data for 21 ORGANIZATION2 languages from the European website",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F26@3"
+   ]
+  },
+  {
+   "id": "ac08a6db12fc",
+   "fact_id": "F26",
+   "text": "finding annotators who will process the [ORGANIZATION6] files for the twenty one languages",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F26@3"
+   ]
+  },
+  {
+   "id": "1f5feedd0b9f",
+   "fact_id": "F27",
+   "text": "6 languages on GitHub",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F27@2",
+    "144b6dec:F27@3",
+    "15995a72:F27@1"
+   ]
+  },
+  {
+   "id": "5fa06668fb7f",
+   "fact_id": "F27",
+   "text": "6 languages uploaded to GitHub",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F27@1"
+   ]
+  },
+  {
+   "id": "d9969208c5b3",
+   "fact_id": "F27",
+   "text": "6-language model",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "cd603688be3a",
+   "fact_id": "F27",
+   "text": "multilingual model for 6 languages",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "d853898e89db",
+   "fact_id": "F27",
+   "text": "website for [ORGANIZATION6] languages",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "2bec49009a4b",
+   "fact_id": "F28",
+   "text": "README with original link",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "4e642b44:F28@1",
+    "4e642b44:F28@2",
+    "4e642b44:F28@3",
+    "f03636da:F28@2",
+    "f03636da:F28@3"
+   ]
+  },
+  {
+   "id": "0e272482c277",
+   "fact_id": "F28",
+   "text": "README with the original link",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F28@2",
+    "48405ba5:F28@3"
+   ]
+  },
+  {
+   "id": "810736cf238c",
+   "fact_id": "F28",
+   "text": "original link",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F28@2",
+    "44a72348:F28@3"
+   ]
+  },
+  {
+   "id": "df758f71f0c5",
+   "fact_id": "F28",
+   "text": "original link for the website",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F28@2",
+    "f03636da:F28@3"
+   ]
+  },
+  {
+   "id": "21fdf9495f0b",
+   "fact_id": "F28",
+   "text": "readme with original link",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F28@2",
+    "44a72348:F28@3"
+   ]
+  },
+  {
+   "id": "8dd6a55eab67",
+   "fact_id": "F29",
+   "text": "auditing",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "e5c47a83342a",
+   "fact_id": "F29",
+   "text": "auditing domain",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "9933f4e0125b",
+   "fact_id": "F29",
+   "text": "computational linguistics",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "d00ab8f3ed76",
+   "fact_id": "F29",
+   "text": "computational linguistics domain",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "624ee3ad8919",
+   "fact_id": "F29",
+   "text": "domains of computational linguistics",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "4e3ffdbc0b94",
+   "fact_id": "F29",
+   "text": "domains of computational linguistics and auditing",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F29@1",
+    "144b6dec:F29@2",
+    "144b6dec:F29@3"
+   ]
+  },
+  {
+   "id": "46c51b11d1e1",
+   "fact_id": "F30",
+   "text": "ASR workers considered offline systems not likely to be better",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "537bea2e8e22",
+   "fact_id": "F30",
+   "text": "not much better than before",
+   "roles": [
+    "e_wrong_form_carrier",
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F30@2",
+    "15995a72:F30@3",
+    "44a72348:F30@1",
+    "44a72348:F30@2",
+    "44a72348:F30@3",
+    "48405ba5:F30@1",
+    "48405ba5:F30@2",
+    "48405ba5:F30@3",
+    "4e642b44:F30@1",
+    "4e642b44:F30@2",
+    "4e642b44:F30@3",
+    "f03636da:F30@1",
+    "f03636da:F30@2",
+    "f03636da:F30@3"
+   ]
+  },
+  {
+   "id": "5d5751d6d1cd",
+   "fact_id": "F30",
+   "text": "offline systems not likely to be better",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "ca0b7e740852",
+   "fact_id": "F31",
+   "text": "PERSON4 owns train his implementation for English ASR",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F31@2",
+    "f03636da:F31@3"
+   ]
+  },
+  {
+   "id": "cb2944d4dfa2",
+   "fact_id": "F31",
+   "text": "PERSON4 owns training his implementation for English ASR",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F31@3",
+    "44a72348:F31@2",
+    "44a72348:F31@3"
+   ]
+  },
+  {
+   "id": "77ad061504d0",
+   "fact_id": "F31",
+   "text": "PERSON8 owns train another PROJECT6-based ASR",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F31@2",
+    "f03636da:F31@3"
+   ]
+  },
+  {
+   "id": "63e95711fa65",
+   "fact_id": "F31",
+   "text": "PERSON8 owns training another PROJECT6-based ASR",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F31@3",
+    "44a72348:F31@2",
+    "44a72348:F31@3"
+   ]
+  },
+  {
+   "id": "59802e6eda7d",
+   "fact_id": "F31",
+   "text": "having our own ASRs",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F31@1",
+    "48405ba5:F31@2",
+    "48405ba5:F31@3"
+   ]
+  },
+  {
+   "id": "d5486937e933",
+   "fact_id": "F32",
+   "text": "ASR quality as the first criterion",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F32@1",
+    "144b6dec:F32@2",
+    "144b6dec:F32@3",
+    "15995a72:F32@2",
+    "15995a72:F32@3"
+   ]
+  },
+  {
+   "id": "28cf3bbe71b0",
+   "fact_id": "F32",
+   "text": "focus on ASR quality as the first criterion",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F32@1",
+    "48405ba5:F32@2",
+    "48405ba5:F32@3",
+    "4e642b44:F32@1",
+    "4e642b44:F32@2",
+    "4e642b44:F32@3"
+   ]
+  },
+  {
+   "id": "e6c75e97f20c",
+   "fact_id": "F35",
+   "text": "allowed corpora for constrained run should double-check edible SLT test set / Double SLT test webpage",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "5132e2ff53b5",
+   "fact_id": "F35",
+   "text": "double-check the edible SLT test set webpage for allowed corpora in the constrained run",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "d5ccff436fa5",
+   "fact_id": "F35",
+   "text": "double-check the edible SLT test set webpage for allowed corpora under the constrained run",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "9146cf374420",
+   "fact_id": "F35",
+   "text": "double-check the edible SLT test set webpage for allowed/licensed corpora for the constrained run",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "d0eb810d65a2",
+   "fact_id": "F35",
+   "text": "double-check the edible SLT test set webpage for licensed/allowed corpora",
+   "roles": [
+    "e_no_carry",
+    "r_rival"
+   ],
+   "decides_rows": [
+    "44a72348:F35@1"
+   ]
+  },
+  {
+   "id": "34cca1ed4f3e",
+   "fact_id": "F35",
+   "text": "double-check the editable SLT test set webpage for allowed corpora and constrained-run licensing",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "33f0d81eff4f",
+   "fact_id": "F35",
+   "text": "double-check which corpora are licensed or allowed for the constrained run",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "c01004e148da",
+   "fact_id": "F35",
+   "text": "license/allowed corpora for constrained run",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "9c9fc783c54b",
+   "fact_id": "F35",
+   "text": "only corpora allowed for the constrained run",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F35@1"
+   ]
+  },
+  {
+   "id": "5701fc233147",
+   "fact_id": "F35",
+   "text": "which corpora are licensed or allowed for the constrained run",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "d0244384ef31",
+   "fact_id": "F36",
+   "text": "built-in segmentation of the output using acoustic information and silence duration after each word",
+   "roles": [
+    "r_carrier",
+    "r_shared_key_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F36@1",
+    "48405ba5:F59@2",
+    "48405ba5:F59@3"
+   ]
+  },
+  {
+   "id": "d88fc3a416e5",
+   "fact_id": "F36",
+   "text": "pass silence-token duration information to PERSON3 for the segmenter model",
+   "roles": [
+    "r_carrier",
+    "r_shared_key_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F36@1",
+    "48405ba5:F36@1",
+    "48405ba5:F59@2",
+    "48405ba5:F59@3"
+   ]
+  },
+  {
+   "id": "b987d35cdc6a",
+   "fact_id": "F36",
+   "text": "pass silence-token information to PERSON3 for the segmenter model",
+   "roles": [
+    "r_shared_key_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F59@3"
+   ]
+  },
+  {
+   "id": "ae8258e205df",
+   "fact_id": "F36",
+   "text": "passing silence-duration information to PERSON3 for the segmenter model",
+   "roles": [
+    "r_shared_key_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F59@2"
+   ]
+  },
+  {
+   "id": "d01582308d4c",
+   "fact_id": "F36",
+   "text": "predict a silence token after each word and use its duration to detect end of sentence",
+   "roles": [
+    "r_carrier",
+    "r_shared_key_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F36@1",
+    "48405ba5:F59@2",
+    "48405ba5:F59@3"
+   ]
+  },
+  {
+   "id": "dc1fe18e98f9",
+   "fact_id": "F36",
+   "text": "silence token duration threshold as an end-of-sentence signal for segmentation",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F36@1"
+   ]
+  },
+  {
+   "id": "b4c77ad13342",
+   "fact_id": "F36",
+   "text": "silence token duration threshold considered use duration longer than a threshold as an end-of-sentence indicator",
+   "roles": [
+    "r_carrier",
+    "r_shared_key_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F36@1",
+    "15995a72:F59@2",
+    "15995a72:F59@3",
+    "4e642b44:F36@1"
+   ]
+  },
+  {
+   "id": "c27ae522e1cf",
+   "fact_id": "F36",
+   "text": "silence-token duration considered duration threshold as end-of-sentence indicator",
+   "roles": [
+    "r_shared_key_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F59@3"
+   ]
+  },
+  {
+   "id": "a0e26c1ec7c7",
+   "fact_id": "F36",
+   "text": "use silence-token duration to help segmentation/punctuation of output",
+   "roles": [
+    "r_shared_key_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F59@3"
+   ]
+  },
+  {
+   "id": "dd3b366cfe27",
+   "fact_id": "F36",
+   "text": "using silence-token duration after each word to help segmentation/punctuation when not running online",
+   "roles": [
+    "r_shared_key_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F59@2"
+   ]
+  },
+  {
+   "id": "c30a8cf6fb65",
+   "fact_id": "F37",
+   "text": "add launchers or installers and launchers within the cruise control repository",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F37@1",
+    "144b6dec:F37@2",
+    "144b6dec:F37@3"
+   ]
+  },
+  {
+   "id": "54b1b0ca2806",
+   "fact_id": "F37",
+   "text": "has launchers or installers and launchers within the cruise control repository",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F37@1",
+    "144b6dec:F37@2",
+    "144b6dec:F37@3"
+   ]
+  },
+  {
+   "id": "47e5b80bbc1c",
+   "fact_id": "F37",
+   "text": "launcher or installer support in cruise control repository",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F37@1",
+    "48405ba5:F37@2",
+    "48405ba5:F37@3"
+   ]
+  },
+  {
+   "id": "93a8e2c5ed03",
+   "fact_id": "F37",
+   "text": "launcher/installer support in cruise control repository",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F37@1",
+    "f03636da:F37@2",
+    "f03636da:F37@3"
+   ]
+  },
+  {
+   "id": "799986d49767",
+   "fact_id": "F37",
+   "text": "launcher/installers in cruise control repository",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F37@1",
+    "48405ba5:F37@2",
+    "48405ba5:F37@3"
+   ]
+  },
+  {
+   "id": "7289303ad325",
+   "fact_id": "F37",
+   "text": "launcher/installers in the cruise control repository",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F37@1",
+    "15995a72:F37@2",
+    "15995a72:F37@3"
+   ]
+  },
+  {
+   "id": "17b6868e60cd",
+   "fact_id": "F37",
+   "text": "launchers or installers and launchers in cruise control repository",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F37@1",
+    "f03636da:F37@2",
+    "f03636da:F37@3"
+   ]
+  },
+  {
+   "id": "1fd7dad3c2be",
+   "fact_id": "F37",
+   "text": "launchers or installers and launchers in the cruise control repository",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F37@1",
+    "15995a72:F37@2",
+    "15995a72:F37@3"
+   ]
+  },
+  {
+   "id": "706cc8d0a9b9",
+   "fact_id": "F37",
+   "text": "launchers or installers and launchers within the cruise control repository",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F37@1",
+    "44a72348:F37@2",
+    "44a72348:F37@3"
+   ]
+  },
+  {
+   "id": "da994784989e",
+   "fact_id": "F37",
+   "text": "launchers or installers in cruise control repository",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F37@1",
+    "f03636da:F37@2",
+    "f03636da:F37@3"
+   ]
+  },
+  {
+   "id": "3aa55d753f49",
+   "fact_id": "F37",
+   "text": "launchers/installers in cruise control repository needed for PROJECT6 setup",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "4e642b44:F37@1",
+    "4e642b44:F37@2",
+    "4e642b44:F37@3"
+   ]
+  },
+  {
+   "id": "3929157b03b5",
+   "fact_id": "F37",
+   "text": "launchers/installers in cruise control repository needed for tools we know how to start",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F37@1",
+    "f03636da:F37@2",
+    "f03636da:F37@3"
+   ]
+  },
+  {
+   "id": "5f8fe76842d2",
+   "fact_id": "F37",
+   "text": "launchers/installers in cruise control repository needed for your model",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "4e642b44:F37@1",
+    "4e642b44:F37@2",
+    "4e642b44:F37@3"
+   ]
+  },
+  {
+   "id": "36579888ab9f",
+   "fact_id": "F37",
+   "text": "needs launchers or installers and launchers within the cruise control repository",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F37@1",
+    "144b6dec:F37@2",
+    "144b6dec:F37@3"
+   ]
+  },
+  {
+   "id": "fd1e037a1e45",
+   "fact_id": "F38",
+   "text": "42 languages",
+   "roles": [
+    "e_no_carry",
+    "r_rival"
+   ],
+   "decides_rows": [
+    "144b6dec:F38@1"
+   ]
+  },
+  {
+   "id": "728ca5953f92",
+   "fact_id": "F38",
+   "text": "42-language model",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "407fc8624c89",
+   "fact_id": "F38",
+   "text": "all 42 languages",
+   "roles": [
+    "e_wrong_form_carrier",
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F38@1",
+    "44a72348:F38@2",
+    "44a72348:F38@3",
+    "48405ba5:F38@2",
+    "48405ba5:F38@3",
+    "4e642b44:F38@2",
+    "4e642b44:F38@3"
+   ]
+  },
+  {
+   "id": "59b93ee076e8",
+   "fact_id": "F38",
+   "text": "all 42 languages with subtitles",
+   "roles": [
+    "e_wrong_form_carrier",
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F38@1",
+    "15995a72:F38@2",
+    "15995a72:F38@3",
+    "f03636da:F38@1",
+    "f03636da:F38@2",
+    "f03636da:F38@3"
+   ]
+  },
+  {
+   "id": "0ffd572de533",
+   "fact_id": "F38",
+   "text": "all 42 target languages",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F38@1",
+    "144b6dec:F38@2",
+    "144b6dec:F38@3"
+   ]
+  },
+  {
+   "id": "1fa8ab39642e",
+   "fact_id": "F38",
+   "text": "all monolingual data in all 42 languages",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "1bbe2301e249",
+   "fact_id": "F38",
+   "text": "monolingual data in all 42 languages",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "03718f5d837e",
+   "fact_id": "F38",
+   "text": "monolingual data in all 42 languages translated to English",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "57eb14210786",
+   "fact_id": "F38",
+   "text": "multilingual model for 42 languages",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "cd80126a9d42",
+   "fact_id": "F39",
+   "text": "all monolingual data in all 42 languages",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "ae5b2353891a",
+   "fact_id": "F39",
+   "text": "back translated into English",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "4e642b44:F39@3"
+   ]
+  },
+  {
+   "id": "be7e85c51983",
+   "fact_id": "F39",
+   "text": "back translation directory owns PERSON11",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "7e477957b719",
+   "fact_id": "F39",
+   "text": "back translation models selected models by PERSON10",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "e069e75b8c71",
+   "fact_id": "F39",
+   "text": "back translation target decided English",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "00385abed26c",
+   "fact_id": "F39",
+   "text": "back translation target selected English",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "7e0269a4f4ef",
+   "fact_id": "F39",
+   "text": "back translation target translate English",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "0dd2600002c5",
+   "fact_id": "F39",
+   "text": "back translation target translated into English",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "906b3a03416b",
+   "fact_id": "F39",
+   "text": "back translation target translated to English",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "2d0782386b28",
+   "fact_id": "F39",
+   "text": "back translation workflow decided use models by PERSON10",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "886f0a3af296",
+   "fact_id": "F39",
+   "text": "back translation workflow ship to PERSON10",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "591dfc57ae75",
+   "fact_id": "F39",
+   "text": "create a directory of back translated text or monotext with back translation",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "d9a03046a3b5",
+   "fact_id": "F39",
+   "text": "directory of back translated text / monotext with back translation",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "664340c8ab53",
+   "fact_id": "F39",
+   "text": "directory of back translated text or monotext with back translation",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "620dcddd3db3",
+   "fact_id": "F39",
+   "text": "large Romanian monolingual data",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "3b3d33628784",
+   "fact_id": "F39",
+   "text": "large Serbian monolingual data",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "74efa7ca3925",
+   "fact_id": "F39",
+   "text": "large monolingual data",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "360095109c36",
+   "fact_id": "F39",
+   "text": "large monolingual data, including Romanian and Serbian",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "6577bd7287f4",
+   "fact_id": "F39",
+   "text": "monolingual data in all 42 languages",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F39@2",
+    "144b6dec:F39@3"
+   ]
+  },
+  {
+   "id": "922da99236f1",
+   "fact_id": "F39",
+   "text": "monolingual data scope decided all 42 languages",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "f7584beb03c1",
+   "fact_id": "F39",
+   "text": "monolingual data selected all 42 languages",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "15d88952578a",
+   "fact_id": "F39",
+   "text": "use models to translate monolingual data into English and populate a back-translated text directory",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F39@2",
+    "144b6dec:F39@3"
+   ]
+  },
+  {
+   "id": "8406a33b3a01",
+   "fact_id": "F39",
+   "text": "use these models for back translation",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "e4d1200dcad7",
+   "fact_id": "F50",
+   "text": "32 percent word error rate",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F50@2",
+    "48405ba5:F50@2",
+    "48405ba5:F50@3",
+    "4e642b44:F50@2",
+    "4e642b44:F50@3",
+    "f03636da:F50@2",
+    "f03636da:F50@3"
+   ]
+  },
+  {
+   "id": "9ac94e6ae7bf",
+   "fact_id": "F50",
+   "text": "[unintelligible] system with 32% word error rate as best so far",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F50@2"
+   ]
+  },
+  {
+   "id": "f8e4a7c3bba9",
+   "fact_id": "F50",
+   "text": "access to a partly involved system with 32% word error rate",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F50@3"
+   ]
+  },
+  {
+   "id": "ce6013166474",
+   "fact_id": "F50",
+   "text": "best so far: system with 32% word error rate",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F50@3"
+   ]
+  },
+  {
+   "id": "c37e33486dc3",
+   "fact_id": "F50",
+   "text": "unintelligible system with 32 percent word error rate",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "4e642b44:F50@2",
+    "4e642b44:F50@3"
+   ]
+  },
+  {
+   "id": "d0de244fabc0",
+   "fact_id": "F53",
+   "text": "baseline run now and improvement only if extra time remains",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F53@2"
+   ]
+  },
+  {
+   "id": "bfc737e3bf5b",
+   "fact_id": "F53",
+   "text": "baseline run now, improvement only if extra time remains",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F53@3"
+   ]
+  },
+  {
+   "id": "987ca20f841b",
+   "fact_id": "F53",
+   "text": "baseline run only for now",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "4e642b44:F53@3"
+   ]
+  },
+  {
+   "id": "2ef18054e6f5",
+   "fact_id": "F53",
+   "text": "baseline run should be done now",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F53@2",
+    "48405ba5:F53@3"
+   ]
+  },
+  {
+   "id": "21e857082e77",
+   "fact_id": "F53",
+   "text": "combination of the things at the moment",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F53@2"
+   ]
+  },
+  {
+   "id": "249c7cb340ad",
+   "fact_id": "F53",
+   "text": "combination of the things should be aimed at current combination of components",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F53@3"
+   ]
+  },
+  {
+   "id": "28dc38cc3e36",
+   "fact_id": "F53",
+   "text": "combination of the things should be the current aim",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F53@2",
+    "48405ba5:F53@3"
+   ]
+  },
+  {
+   "id": "a30aa64dd24f",
+   "fact_id": "F53",
+   "text": "do a baseline run now",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F53@3"
+   ]
+  },
+  {
+   "id": "00b8f23cd77b",
+   "fact_id": "F53",
+   "text": "done now",
+   "roles": [
+    "r_rival"
+   ],
+   "decides_rows": [
+    "48405ba5:F53@2"
+   ]
+  },
+  {
+   "id": "8141b7ec4738",
+   "fact_id": "F56",
+   "text": "empty",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F56@3",
+    "48405ba5:F56@2"
+   ]
+  },
+  {
+   "id": "a5dc53cf279b",
+   "fact_id": "F57",
+   "text": "avoid doing the same thing twice",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "ad9e441b305c",
+   "fact_id": "F57",
+   "text": "doing the same thing twice",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "b531abbc9435",
+   "fact_id": "F57",
+   "text": "synchronize with PERSON1 to ensure all is done exactly once",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "2f1a8485a132",
+   "fact_id": "F57",
+   "text": "the work with annotator help",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "4e9f0ea294b8",
+   "fact_id": "F58",
+   "text": "GitHub issue tracker for cruise control",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "91b7fe8747dc",
+   "fact_id": "F58",
+   "text": "GitHub issues / issue tracker for cruise control and polishing work",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "81b1da968699",
+   "fact_id": "F58",
+   "text": "GitHub issues for cruise control",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "cedd361d5343",
+   "fact_id": "F58",
+   "text": "Simple preprocessing script for sentence segmentation and sentence alignment",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "de767547878d",
+   "fact_id": "F58",
+   "text": "a polished consolidated release of the cruise control setup",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "930306c3d239",
+   "fact_id": "F58",
+   "text": "a polished release of the cruise control setup with all bells and whistles merged",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "19ccb89383e3",
+   "fact_id": "F58",
+   "text": "add launchers or installers and launchers within the cruise control repository",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "650f83242b87",
+   "fact_id": "F58",
+   "text": "cleanup and polishing of the cruise control setup release",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "50d852398afc",
+   "fact_id": "F58",
+   "text": "cleanup of the cruise control setup",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "659f5a939d90",
+   "fact_id": "F58",
+   "text": "cruise control",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F58@3"
+   ]
+  },
+  {
+   "id": "d4243302589f",
+   "fact_id": "F58",
+   "text": "do not have launchers or installers and launchers within the cruise control repository",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "852ab8a884db",
+   "fact_id": "F58",
+   "text": "does not have launchers or installers and launchers within the cruise control repository",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "f8e9a8e068c1",
+   "fact_id": "F58",
+   "text": "has launchers or installers and launchers within the cruise control repository",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "596dcddd3735",
+   "fact_id": "F58",
+   "text": "issue tracker / GitHub issues for cruise control polishing",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "b06d7e680565",
+   "fact_id": "F58",
+   "text": "launcher or installer support in cruise control repository",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "3b666de3e097",
+   "fact_id": "F58",
+   "text": "launcher/installer support in cruise control repository",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "4391c24b5c3a",
+   "fact_id": "F58",
+   "text": "launcher/installers in cruise control repository",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "ed019ce87ee6",
+   "fact_id": "F58",
+   "text": "launcher/installers in the cruise control repository",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "508c52b4a2a9",
+   "fact_id": "F58",
+   "text": "launchers or installers and launchers in cruise control repository",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "d8ebd38012b5",
+   "fact_id": "F58",
+   "text": "launchers or installers and launchers in the cruise control repository",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "90a5cce2ddf8",
+   "fact_id": "F58",
+   "text": "launchers or installers and launchers within the cruise control repository",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "20bed313436f",
+   "fact_id": "F58",
+   "text": "launchers or installers in cruise control repository",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "8eec4ce20dee",
+   "fact_id": "F58",
+   "text": "manual cruise-control style running before making it push-button easy",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "bc39ef855568",
+   "fact_id": "F58",
+   "text": "manual cruise-control style running to observe how MT systems process the files",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "6ce2084ec27f",
+   "fact_id": "F58",
+   "text": "needs launchers or installers and launchers within the cruise control repository",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "ffa1da132b05",
+   "fact_id": "F58",
+   "text": "one polished release of the cruise control setup",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "0c20ff3e9baf",
+   "fact_id": "F58",
+   "text": "one simple script to run PERSON7 ASR on the cluster in the correct way",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "ed836058a3ea",
+   "fact_id": "F58",
+   "text": "one simple script to run the PERSON7 ASR on the cluster in the correct way",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "1994a97c347f",
+   "fact_id": "F58",
+   "text": "one simple script to run the [PERSON7] ASR on the cluster in the correct way",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "009226c903a1",
+   "fact_id": "F58",
+   "text": "probably does not have launchers or installers and launchers within the cruise control repository",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "0477c90684ed",
+   "fact_id": "F58",
+   "text": "run cruise control manually on the PROJECT1 test set",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "c7844b9f6b0a",
+   "fact_id": "F58",
+   "text": "script editing for simple processing adjustments",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "6bb32e9b1929",
+   "fact_id": "F58",
+   "text": "simple preprocessing script for sentence segmentation",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "ddc0cb7af241",
+   "fact_id": "F58",
+   "text": "simple preprocessing script for sentence segmentation and sentence alignment",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "8f5f17bf6a2c",
+   "fact_id": "F58",
+   "text": "simple preprocessing script with some errors",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "1ba05ab87e5d",
+   "fact_id": "F58",
+   "text": "simple processing scripts",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "93cb3e0b74a6",
+   "fact_id": "F58",
+   "text": "simple script for PERSON13 in cruise control",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F58@2",
+    "15995a72:F58@3"
+   ]
+  },
+  {
+   "id": "9f2a83ee170a",
+   "fact_id": "F58",
+   "text": "simple script for cruise control / deployment or running the workers on the setup",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F58@2",
+    "f03636da:F58@3"
+   ]
+  },
+  {
+   "id": "89fd293c8fed",
+   "fact_id": "F58",
+   "text": "start running cruise control manually on the PROJECT1 test set",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "65f6c121f6e6",
+   "fact_id": "F58",
+   "text": "using an issue tracker (Bugzilla or GitHub issues) for cruise control/pipeline work",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "2f0eb96740b5",
+   "fact_id": "F58",
+   "text": "visualizer / cruise control setup integration",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "d44712b48854",
+   "fact_id": "F58",
+   "text": "worker scripts in cruise control",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "652add6c0ac9",
+   "fact_id": "F59",
+   "text": "based on pause durations",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F59@2",
+    "15995a72:F59@3",
+    "44a72348:F59@2",
+    "48405ba5:F59@2",
+    "48405ba5:F59@3",
+    "f03636da:F59@3"
+   ]
+  },
+  {
+   "id": "cf647846f0d7",
+   "fact_id": "F60",
+   "text": "a second copy",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "7c2528916f59",
+   "fact_id": "F60",
+   "text": "a second copy of the existing [ORGANIZATION1] collection files",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "064e52370df8",
+   "fact_id": "F60",
+   "text": "create a second copy of the existing files from the [ORGANIZATION1] collection",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "3a9477d89f0f",
+   "fact_id": "F60",
+   "text": "create one new subdirectory",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "9f97b2689e8b",
+   "fact_id": "F60",
+   "text": "create one new subdirectory in the documents for the [ORGANIZATION1] document",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "978610760deb",
+   "fact_id": "F60",
+   "text": "do not create a second copy",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "bfb47c4d94a8",
+   "fact_id": "F60",
+   "text": "do not create a second copy of the existing files",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "c5eca63d875f",
+   "fact_id": "F60",
+   "text": "existing files from [ORGANIZATION1] collection should not have second copy no duplicate copies",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "d154aea56e35",
+   "fact_id": "F60",
+   "text": "one new subdirectory",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "3d657c918751",
+   "fact_id": "F60",
+   "text": "second copy",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "6961978992f3",
+   "fact_id": "F60",
+   "text": "second copy of existing [ORGANIZATION1] collection files",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "08f1361086d7",
+   "fact_id": "F60",
+   "text": "second copy of existing files",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "d00a4c1d4b9f",
+   "fact_id": "F61",
+   "text": "create organization of the training data on disk",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "04c7bb526c1d",
+   "fact_id": "F61",
+   "text": "create the organization of the test/training data on disk, not in version control, because files will be bigger",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "df991bf9aa34",
+   "fact_id": "F61",
+   "text": "include Common Voice in the training data",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "f3292c7717c3",
+   "fact_id": "F61",
+   "text": "mainly training data, not the [PROJECT5] test set",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F61@3",
+    "48405ba5:F61@3",
+    "f03636da:F61@2",
+    "f03636da:F61@3"
+   ]
+  },
+  {
+   "id": "a910df9a9749",
+   "fact_id": "F61",
+   "text": "mono data and prepare test set for the rest of the languages except [ORGANIZATION2] language",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "7d2f7a122dcf",
+   "fact_id": "F61",
+   "text": "not to use the [PROJECT5] test set; put this mainly to training data",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F61@2",
+    "15995a72:F61@3"
+   ]
+  },
+  {
+   "id": "c59123ba2e2c",
+   "fact_id": "F61",
+   "text": "not use [PROJECT5] test set; put it mainly to training data",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "4e642b44:F61@2",
+    "4e642b44:F61@3"
+   ]
+  },
+  {
+   "id": "6571de059f91",
+   "fact_id": "F61",
+   "text": "not yet organized for training data",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "d311058efc7d",
+   "fact_id": "F61",
+   "text": "only dev set has been evaluated so far; test set has not yet been processed",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "0de63f6bb684",
+   "fact_id": "F61",
+   "text": "only on dev set so far; test set not yet processed",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "af8173d17f22",
+   "fact_id": "F61",
+   "text": "organization of the test/training data not yet available",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "ceda5e963357",
+   "fact_id": "F61",
+   "text": "prepare mono data and test set for the rest of the languages except [ORGANIZATION2] language",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "3b4b8670bffb",
+   "fact_id": "F61",
+   "text": "put mainly to training data, not to the [PROJECT5] test set",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F61@2",
+    "44a72348:F61@3"
+   ]
+  },
+  {
+   "id": "78cab0e573b4",
+   "fact_id": "F61",
+   "text": "test data organization considered not yet available",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "ec4affff4942",
+   "fact_id": "F61",
+   "text": "test data organization considered not yet organized",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "89655bdfe6ce",
+   "fact_id": "F61",
+   "text": "trained on several other data sets",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "ca0a5b3f690f",
+   "fact_id": "F61",
+   "text": "training data organization considered needs to be created on disk rather than in version control because files will be bigger",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "530697df4e56",
+   "fact_id": "F61",
+   "text": "training data organization proposed create on the disc, not version",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "7ac2228b7f93",
+   "fact_id": "F61",
+   "text": "training data organization proposed create the organization on disk rather than in version control because files will be bigger",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "d7c03a81803b",
+   "fact_id": "F61",
+   "text": "use data to train the model with partial inputs",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "3e336cae23eb",
+   "fact_id": "F61",
+   "text": "was trained on several other data sets",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "8c5c7c6a7038",
+   "fact_id": "F61",
+   "text": "what was in the training data",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "144a61a4d817",
+   "fact_id": "F62",
+   "text": "bigger files",
+   "roles": [
+    "e_no_carry",
+    "r_rival"
+   ],
+   "decides_rows": [
+    "48405ba5:F62@3"
+   ],
+   "recorded_result_rows": [
+    "48405ba5:F62@3"
+   ]
+  },
+  {
+   "id": "19ed28778226",
+   "fact_id": "F62",
+   "text": "create organization of the training data on disk",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "659df12145a6",
+   "fact_id": "F62",
+   "text": "create the organization of the test/training data on disk, not in version control, because files will be bigger",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F62@2",
+    "144b6dec:F62@3"
+   ]
+  },
+  {
+   "id": "e3e75b6434d5",
+   "fact_id": "F62",
+   "text": "create the organization on disk rather than in version control because files will be bigger",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F62@2",
+    "15995a72:F62@3"
+   ]
+  },
+  {
+   "id": "cdfc0ecaef69",
+   "fact_id": "F62",
+   "text": "on the disc, not version control",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F62@3"
+   ]
+  },
+  {
+   "id": "0b1c4f85f084",
+   "fact_id": "F62",
+   "text": "on the disc, not version, because files will be bigger",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F62@3"
+   ]
+  },
+  {
+   "id": "00808253eef3",
+   "fact_id": "F63",
+   "text": "Serbian, Croatian, Bosnian, Montenegrin",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F63@2",
+    "48405ba5:F63@3"
+   ]
+  },
+  {
+   "id": "96008a156c16",
+   "fact_id": "F64",
+   "text": "continue past TSV upload to find annotators to process the files",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F64@2",
+    "48405ba5:F64@3"
+   ]
+  },
+  {
+   "id": "6d265678471e",
+   "fact_id": "F64",
+   "text": "do not stop at TSV files in the GitHub repository; continue forward to find annotators for processing",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F64@2",
+    "144b6dec:F64@3"
+   ]
+  },
+  {
+   "id": "8b3979b825b3",
+   "fact_id": "F64",
+   "text": "find annotators to process the files after TSV upload",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F64@2",
+    "f03636da:F64@3"
+   ]
+  },
+  {
+   "id": "021043dad73f",
+   "fact_id": "F64",
+   "text": "find annotators who will process the files",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F64@2",
+    "15995a72:F64@3"
+   ]
+  },
+  {
+   "id": "f9ec24ccaf5b",
+   "fact_id": "F64",
+   "text": "find annotators who will process the files after TSV upload",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "4e642b44:F64@2",
+    "4e642b44:F64@3"
+   ]
+  },
+  {
+   "id": "e2ea322666cc",
+   "fact_id": "F64",
+   "text": "find the annotators who will process the [ORGANIZATION6] files",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F64@2",
+    "144b6dec:F64@3"
+   ]
+  },
+  {
+   "id": "c028bba683c9",
+   "fact_id": "F64",
+   "text": "finding annotators who will process the [ORGANIZATION6] files for the twenty one languages",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F64@2",
+    "44a72348:F64@3"
+   ]
+  },
+  {
+   "id": "4a6d0bf6c5c3",
+   "fact_id": "F65",
+   "text": "low amount of work",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "9e7b61d5d4e6",
+   "fact_id": "F65",
+   "text": "streamlined communication with validators to avoid many individual emails",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F65@3"
+   ]
+  },
+  {
+   "id": "1da33d36c80f",
+   "fact_id": "F66",
+   "text": "as multilingual as possible",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F66@3",
+    "48405ba5:F66@3",
+    "4e642b44:F66@3",
+    "f03636da:F66@3"
+   ]
+  },
+  {
+   "id": "a8d88be72d7a",
+   "fact_id": "F67",
+   "text": "23rd",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F67@2",
+    "48405ba5:F67@3",
+    "4e642b44:F67@2",
+    "4e642b44:F67@3"
+   ]
+  },
+  {
+   "id": "ba35e5dc35db",
+   "fact_id": "F67",
+   "text": "after the edible SLT, around the 23rd",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F67@2",
+    "144b6dec:F67@3",
+    "15995a72:F67@2",
+    "15995a72:F67@3",
+    "44a72348:F67@2",
+    "44a72348:F67@3",
+    "f03636da:F67@2",
+    "f03636da:F67@3"
+   ]
+  },
+  {
+   "id": "c105d6363928",
+   "fact_id": "F68",
+   "text": "Romanian is critical because the project officer is Romanian",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F68@2",
+    "144b6dec:F68@3"
+   ]
+  },
+  {
+   "id": "edb4e1348ecd",
+   "fact_id": "F68",
+   "text": "Romanian language support considered critical",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F68@2",
+    "15995a72:F68@3"
+   ]
+  },
+  {
+   "id": "81de6618613a",
+   "fact_id": "F68",
+   "text": "critical",
+   "roles": [
+    "r_rival"
+   ],
+   "decides_rows": [
+    "15995a72:F68@2"
+   ]
+  },
+  {
+   "id": "853e621d1fd1",
+   "fact_id": "F68",
+   "text": "critical because the project officer is Romanian",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F68@2",
+    "48405ba5:F68@2",
+    "48405ba5:F68@3",
+    "4e642b44:F68@2",
+    "4e642b44:F68@3"
+   ]
+  },
+  {
+   "id": "ea17a6705ecd",
+   "fact_id": "F69",
+   "text": "deployment by April 18 would be at risk",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F69@3"
+   ]
+  },
+  {
+   "id": "ff5dca35926a",
+   "fact_id": "F70",
+   "text": "GPU machines",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "efe850100767",
+   "fact_id": "F70",
+   "text": "GPU machines as primary deployment target",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "4d2194b59c74",
+   "fact_id": "F70",
+   "text": "GPU machines as the primary deployment target",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "4b39cd25d0e7",
+   "fact_id": "F70",
+   "text": "GPU machines by PERSON14 and/or PERSON4 with PERSON14's help",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "12ee065c6e13",
+   "fact_id": "F70",
+   "text": "TPU as a fallback",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "2cef54d34c27",
+   "fact_id": "F70",
+   "text": "TPU as fallback",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "a8604bf6aee6",
+   "fact_id": "F70",
+   "text": "TPU as fallback only",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "dbb62de949bb",
+   "fact_id": "F70",
+   "text": "TPU considered as fallback only, not the sole solution",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "44a58c4d995b",
+   "fact_id": "F70",
+   "text": "demo timing fallback considered 20th or 24th for the paper",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "5ded0cad0041",
+   "fact_id": "F70",
+   "text": "deployment fallback TPU",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "3be0eed93c0a",
+   "fact_id": "F70",
+   "text": "deployment fallback considered TPU",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "1b84bf864a7b",
+   "fact_id": "F70",
+   "text": "on TPU as a fallback",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "7d970343f884",
+   "fact_id": "F70",
+   "text": "twice at the same time on GPU machines",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "50431fe98b2d",
+   "fact_id": "F70",
+   "text": "twice at the same time on GPU machines with help from PERSON14",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "7f0390821711",
+   "fact_id": "F70",
+   "text": "twice at the same time on GPU machines, with TPU as fallback",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F70@2",
+    "15995a72:F70@3"
+   ]
+  },
+  {
+   "id": "f849a5e74ff6",
+   "fact_id": "F81",
+   "text": "3 by ORGANIZATION6",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F81@3"
+   ]
+  },
+  {
+   "id": "3183fc263679",
+   "fact_id": "F81",
+   "text": "BLAS scores on the 3 [ORGANIZATION6] online ASRs",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F81@3"
+   ]
+  },
+  {
+   "id": "f8244a9daef1",
+   "fact_id": "F82",
+   "text": "Antrecorp rejected dropped from consideration because it is very unstable",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "f4cedba483db",
+   "fact_id": "F82",
+   "text": "average of the scores of the 3 ASRs",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "d7944ac7858f",
+   "fact_id": "F82",
+   "text": "average score",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "531dbe8953cc",
+   "fact_id": "F83",
+   "text": "make sure the system is ready to subtitle / paragraph view by 11 or before",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "c88733e5e754",
+   "fact_id": "F83",
+   "text": "paragraph view subtitle display by 11 or before",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F83@3"
+   ]
+  },
+  {
+   "id": "6200075e7f05",
+   "fact_id": "F83",
+   "text": "ready to subtitle / paragraph view by 11 or earlier",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "06ac252369a1",
+   "fact_id": "F83",
+   "text": "ready to subtitle / paragraph view setup by 11 or earlier",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "4d5741325b2a",
+   "fact_id": "F84",
+   "text": "Czech ASR displaying Czech, English, and German",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F84@3"
+   ]
+  },
+  {
+   "id": "9db1cb7a0796",
+   "fact_id": "F84",
+   "text": "Czech ASR into displaying Czech, English and German",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F84@3",
+    "4e642b44:F84@3"
+   ]
+  },
+  {
+   "id": "5034e46c5a2f",
+   "fact_id": "F84",
+   "text": "Czech ASR into displaying Czech, English, and German",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F84@3"
+   ]
+  },
+  {
+   "id": "930bad62ce30",
+   "fact_id": "F84",
+   "text": "Czech ASR pipeline displaying Czech, English, and German",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F84@3"
+   ]
+  },
+  {
+   "id": "0f514180bc74",
+   "fact_id": "F84",
+   "text": "Czech, English, and German",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F84@3"
+   ]
+  },
+  {
+   "id": "211a22755614",
+   "fact_id": "F84",
+   "text": "English and German translation in addition to Czech",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F84@3"
+   ]
+  },
+  {
+   "id": "0a1663724c16",
+   "fact_id": "F84",
+   "text": "English to German",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "42e29f80ec41",
+   "fact_id": "F84",
+   "text": "English to German option",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "62726203b0be",
+   "fact_id": "F84",
+   "text": "German",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "30d287474a26",
+   "fact_id": "F84",
+   "text": "about 31 BLEU on German-English and English-German",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "5911d3ff701c",
+   "fact_id": "F84",
+   "text": "contains two example files, one in German and one in English",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "c1b23928a976",
+   "fact_id": "F84",
+   "text": "multiple languages beyond Czech, English, and German",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "b31b20c1bbf4",
+   "fact_id": "F84",
+   "text": "translate into English and German",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "ab3aecbcb23d",
+   "fact_id": "F84",
+   "text": "two example files, one in German and one in English",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "b885f8d9602d",
+   "fact_id": "F84",
+   "text": "two example files: one German and one English",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "8f06327cb1b1",
+   "fact_id": "F86",
+   "text": "Correct the EAF files based on the sound",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "1babb3610830",
+   "fact_id": "F86",
+   "text": "EAF and OSTT files considered Equally likely to contain transcription errors",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "9f8ec71fb712",
+   "fact_id": "F86",
+   "text": "EAF and OSTT transcription errors considered Equally likely to contain transcription errors",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "98aa4b6b66ce",
+   "fact_id": "F86",
+   "text": "EAF and modify OSTT according to EAF when the listener does not understand",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F86@3",
+    "15995a72:F86@3"
+   ]
+  },
+  {
+   "id": "49eb58b547c1",
+   "fact_id": "F86",
+   "text": "EAF file correction basis selected sound",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "bc3dc95538bc",
+   "fact_id": "F86",
+   "text": "EAF files and OSTT files are equally likely to have transcription errors",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "1829c5152344",
+   "fact_id": "F86",
+   "text": "EAF files correction basis selected sound",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "840e9f6fd964",
+   "fact_id": "F86",
+   "text": "EAF files to be corrected based on sound and mismatch points in texts",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "e700b3a7af99",
+   "fact_id": "F86",
+   "text": "EAF versions proposed Provide two versions: one per item and one based on the corrected version",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "f9a28eabbd5a",
+   "fact_id": "F86",
+   "text": "Equally likely to contain transcription errors",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "d3f1f80fafb4",
+   "fact_id": "F86",
+   "text": "Flip a coin to choose between EAF and OSTT",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "a3fcd9a9fe3e",
+   "fact_id": "F86",
+   "text": "Manually revise mismatched files by checking the sound and choosing the correct transcript, using EAF when it is the easier option but correcting EAF from OSTT when EAF is wrong",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "abcf1d655a82",
+   "fact_id": "F86",
+   "text": "Use the sound as the source of truth and resolve EAF/OSTT mismatches by listening again rather than flipping a coin",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "b012454dbc4d",
+   "fact_id": "F86",
+   "text": "Use the sound as the source of truth to resolve EAF/OSTT mismatches",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "4cdf80d983a2",
+   "fact_id": "F86",
+   "text": "choose EAF files for time-labeled transcripts",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "37a0e564647e",
+   "fact_id": "F86",
+   "text": "flip a coin to choose between EAF and OSTT",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "deb4984510df",
+   "fact_id": "F86",
+   "text": "mismatch points added to EAF files places where OSTT files show the mismatch",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "771db01eb5d6",
+   "fact_id": "F86",
+   "text": "mismatch resolution method decided Use the sound as the source of truth and resolve EAF/OSTT mismatches by listening again rather than flipping a coin",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "7ab0493aa437",
+   "fact_id": "F86",
+   "text": "places where OSTT files show the mismatch",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "cd1d21647e02",
+   "fact_id": "F86",
+   "text": "sound",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "0077e508af42",
+   "fact_id": "F86",
+   "text": "transcription workflow decided Use the sound as the source of truth to resolve EAF/OSTT mismatches",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "f31f7ff3936a",
+   "fact_id": "F88",
+   "text": "sentence catch up",
+   "roles": [
+    "r_rival"
+   ],
+   "decides_rows": [
+    "15995a72:F88@3",
+    "44a72348:F88@3",
+    "f03636da:F88@3"
+   ]
+  },
+  {
+   "id": "6811497b0898",
+   "fact_id": "F88",
+   "text": "still imperfect",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F88@3",
+    "f03636da:F88@3"
+   ]
+  },
+  {
+   "id": "803d4bff39de",
+   "fact_id": "F88",
+   "text": "still imperfect and needing improvement",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F88@3"
+   ]
+  },
+  {
+   "id": "c52db00619a0",
+   "fact_id": "F89",
+   "text": "system papers length has lower bound 4 pages",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "ce48f3ee4e59",
+   "fact_id": "F89",
+   "text": "system papers lower bound is 4 pages",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "66490dfb5b74",
+   "fact_id": "F89",
+   "text": "transcripts without timestamps from PERSON4 and PERSON8",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "818dbcb337d5",
+   "fact_id": "F91",
+   "text": "separate section in PERSON16's Overleaf paper",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:F91@3"
+   ]
+  },
+  {
+   "id": "f6ed4c8ee0ee",
+   "fact_id": "F91",
+   "text": "separate section in PERSON16's paper",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:F91@3",
+    "4e642b44:F91@3"
+   ]
+  },
+  {
+   "id": "1e7df1e196c7",
+   "fact_id": "F91",
+   "text": "separate section in [PERSON16]'s Overleaf paper",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F91@3"
+   ]
+  },
+  {
+   "id": "83d582f5ef7c",
+   "fact_id": "F91",
+   "text": "write it as a separate section in PERSON16's Overleaf paper",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F91@3"
+   ]
+  },
+  {
+   "id": "59b892e1f596",
+   "fact_id": "F92",
+   "text": "Google scored slightly better",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "b3cb91362398",
+   "fact_id": "F92",
+   "text": "Microsoft scored in the middle",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "84d30fc20b4d",
+   "fact_id": "F92",
+   "text": "Microsoft somewhere in the middle",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "ab066d8b9352",
+   "fact_id": "F92",
+   "text": "all parts of the test set",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "3a1f4515b3b2",
+   "fact_id": "F92",
+   "text": "all systems on the test set",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "b459cdde222f",
+   "fact_id": "F92",
+   "text": "all systems on the test set, including Google submission and Microsoft",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "0bccd1688a69",
+   "fact_id": "F92",
+   "text": "all the many system",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "6c01fce87520",
+   "fact_id": "F92",
+   "text": "blascors of all the systems",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "6ff3122d9e09",
+   "fact_id": "F92",
+   "text": "copy of [PERSON9]'s spreadsheet with evaluated blascors of all the systems",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "06c06c90415a",
+   "fact_id": "F92",
+   "text": "copy of evaluated blascors of all the systems",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "5e4f49150097",
+   "fact_id": "F92",
+   "text": "evaluate all systems on the test set, including Google and Microsoft submissions",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "6a7314dcfa15",
+   "fact_id": "F92",
+   "text": "evaluate all systems on the test set, including Google submission and Microsoft",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "ffe4ef3837ac",
+   "fact_id": "F92",
+   "text": "evaluated BLEU scores of all the systems and passed them in a spreadsheet",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "c8688003cbde",
+   "fact_id": "F92",
+   "text": "evaluated blascors of all the systems",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "8db04c7feb09",
+   "fact_id": "F92",
+   "text": "evaluation of BLEU scores for all systems",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "11486f629c92",
+   "fact_id": "F92",
+   "text": "evaluation of all the systems",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "23123ccfc43f",
+   "fact_id": "F92",
+   "text": "evaluation of blascors of all the systems",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "0af9e927bd36",
+   "fact_id": "F92",
+   "text": "run them on all parts of the test set",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "48b2bc388232",
+   "fact_id": "F92",
+   "text": "running them on all parts of the test set",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "ae91ede8d5a3",
+   "fact_id": "F92",
+   "text": "submission of all the many system",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "340a256ebdd8",
+   "fact_id": "F93",
+   "text": "finalize the runs",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F93@3"
+   ]
+  },
+  {
+   "id": "e67296655a28",
+   "fact_id": "F93",
+   "text": "finalize the runs after the deadline",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:F93@3"
+   ]
+  },
+  {
+   "id": "b8f9b4d9c498",
+   "fact_id": "F93",
+   "text": "other MT runs after the deadline",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F93@3",
+    "f03636da:F93@3"
+   ]
+  },
+  {
+   "id": "709273caef81",
+   "fact_id": "F93",
+   "text": "other MT runs to make the tables complete in the paper",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "4e642b44:F93@3"
+   ]
+  },
+  {
+   "id": "bf4cc929cf08",
+   "fact_id": "F93",
+   "text": "run the other MT after the deadline to make the tables complete",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:F93@3"
+   ]
+  },
+  {
+   "id": "6b960c3a28af",
+   "fact_id": "F93",
+   "text": "tables should be made complete by finalizing all runs",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:F93@3",
+    "f03636da:F93@3"
+   ]
+  },
+  {
+   "id": "e1a792ef1bd7",
+   "fact_id": "R01",
+   "text": "PERSON2 will send the document by tonight",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:R01@0",
+    "f03636da:R01@1",
+    "f03636da:R01@2",
+    "f03636da:R01@3"
+   ]
+  },
+  {
+   "id": "4d66c740590a",
+   "fact_id": "R01",
+   "text": "PERSON2 will send the prepared material by tonight",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:R01@0",
+    "144b6dec:R01@1",
+    "144b6dec:R01@2",
+    "144b6dec:R01@3",
+    "15995a72:R01@0",
+    "15995a72:R01@1",
+    "15995a72:R01@2",
+    "15995a72:R01@3",
+    "4e642b44:R01@0",
+    "4e642b44:R01@1",
+    "4e642b44:R01@2",
+    "4e642b44:R01@3"
+   ]
+  },
+  {
+   "id": "f2ffc0d5f4ff",
+   "fact_id": "R01",
+   "text": "email PERSON5 about the website/data source",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "d91bae93e701",
+   "fact_id": "R01",
+   "text": "email to PERSON5",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "70e08fdb9dc3",
+   "fact_id": "R01",
+   "text": "sending the update by tonight",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:R01@0",
+    "44a72348:R01@1",
+    "44a72348:R01@2",
+    "44a72348:R01@3"
+   ]
+  },
+  {
+   "id": "ad59622277fc",
+   "fact_id": "R03",
+   "text": "Antrecorp test sets",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:R03@2",
+    "144b6dec:R03@3",
+    "44a72348:R03@2",
+    "44a72348:R03@3"
+   ]
+  },
+  {
+   "id": "a24e5013519e",
+   "fact_id": "R03",
+   "text": "Antrecorp test sets considered should not use",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "48405ba5:R03@2",
+    "48405ba5:R03@3",
+    "4e642b44:R03@2",
+    "4e642b44:R03@3",
+    "f03636da:R03@2",
+    "f03636da:R03@3"
+   ]
+  },
+  {
+   "id": "b5382c0ce949",
+   "fact_id": "R03",
+   "text": "not to use [PROJECT5] test set; use mainly training data instead",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "836d1bbee0d7",
+   "fact_id": "R03",
+   "text": "not to use the [PROJECT5] test set; put this mainly to training data",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "bfc9e773cb22",
+   "fact_id": "R03",
+   "text": "not use [PROJECT5] test set; put it mainly to training data",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "86a85829d4d4",
+   "fact_id": "R03",
+   "text": "use Antrecorp test sets",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:R03@2",
+    "15995a72:R03@3"
+   ]
+  },
+  {
+   "id": "365dcc854aef",
+   "fact_id": "R04",
+   "text": "mainly training data, not the [PROJECT5] test set",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:R04@2",
+    "144b6dec:R04@3",
+    "48405ba5:R04@2",
+    "48405ba5:R04@3",
+    "f03636da:R04@2",
+    "f03636da:R04@3"
+   ]
+  },
+  {
+   "id": "afb5ef4fd48b",
+   "fact_id": "R04",
+   "text": "only dev set has been evaluated so far; test set has not yet been processed",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "b736bb3870e3",
+   "fact_id": "R04",
+   "text": "only on dev set so far; test set not yet processed",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "939980ad8fcb",
+   "fact_id": "R04",
+   "text": "put mainly to training data, not to the [PROJECT5] test set",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:R04@2",
+    "44a72348:R04@3"
+   ]
+  },
+  {
+   "id": "77dfca10b654",
+   "fact_id": "R05",
+   "text": "TPU as only solution preferred not the only solution",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:R05@2",
+    "144b6dec:R05@3",
+    "f03636da:R05@2",
+    "f03636da:R05@3"
+   ]
+  },
+  {
+   "id": "035eb764d3b0",
+   "fact_id": "R05",
+   "text": "not the only solution",
+   "roles": [
+    "r_rival"
+   ],
+   "decides_rows": [
+    "144b6dec:R05@2",
+    "144b6dec:R05@3",
+    "f03636da:R05@2",
+    "f03636da:R05@3"
+   ]
+  },
+  {
+   "id": "307898d82d3c",
+   "fact_id": "R07",
+   "text": "Correct the EAF files based on the sound",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "2477a242b3f4",
+   "fact_id": "R07",
+   "text": "EAF and OSTT files considered Equally likely to contain transcription errors",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "b8f6c732ad67",
+   "fact_id": "R07",
+   "text": "EAF and OSTT files considered equally likely to have transcription errors",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "c94fbeec728f",
+   "fact_id": "R07",
+   "text": "EAF file correction basis selected sound",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "438686d2b677",
+   "fact_id": "R07",
+   "text": "EAF files and OSTT files are equally likely to have transcription errors",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "aeab49a89a3a",
+   "fact_id": "R07",
+   "text": "EAF files corrected by comparing mismatches places where OSTT files show mismatch",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "a2f46869284b",
+   "fact_id": "R07",
+   "text": "EAF files correction basis selected sound",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "e443a0691508",
+   "fact_id": "R07",
+   "text": "EAF files to be corrected based on sound and mismatch points in texts",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "0395cba9bd13",
+   "fact_id": "R07",
+   "text": "OSTT files rejected as basis for correction trust as source of truth",
+   "roles": [
+    "r_carrier"
+   ],
+   "decides_rows": [
+    "f03636da:R07@3"
+   ]
+  },
+  {
+   "id": "01cf1b1fdde7",
+   "fact_id": "R07",
+   "text": "Use the sound as the source of truth and resolve EAF/OSTT mismatches by listening again rather than flipping a coin",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:R07@3"
+   ]
+  },
+  {
+   "id": "3f7855710c69",
+   "fact_id": "R07",
+   "text": "correct EAF files based on the OSTT files when EAF files are wrong",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:R07@3"
+   ]
+  },
+  {
+   "id": "e3de8685e968",
+   "fact_id": "R07",
+   "text": "correct EAF files based on the sound and mark mismatches from OSTT files",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "90d17ca47e68",
+   "fact_id": "R07",
+   "text": "correcting EAF files based on OSTT files",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "44a72348:R07@3"
+   ]
+  },
+  {
+   "id": "685f3e9578ae",
+   "fact_id": "R07",
+   "text": "mismatch points added to EAF files places where OSTT files show the mismatch",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "5ed5b46e77a2",
+   "fact_id": "R07",
+   "text": "trust as source of truth",
+   "roles": [
+    "e_no_carry",
+    "r_rival"
+   ],
+   "decides_rows": [
+    "f03636da:R07@3"
+   ]
+  },
+  {
+   "id": "7e87be3f1d57",
+   "fact_id": "R08",
+   "text": "a separate paper",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "f927925fbe2a",
+   "fact_id": "R08",
+   "text": "choose the major from the ORGANIZATION3 paper",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "6f35bdf93352",
+   "fact_id": "R08",
+   "text": "major from the ORGANIZATION3 paper",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "4ad439e4e54c",
+   "fact_id": "R08",
+   "text": "separate paper",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "449243860d7d",
+   "fact_id": "R08",
+   "text": "separate section in PERSON16's Overleaf paper",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "7f52ad4534af",
+   "fact_id": "R08",
+   "text": "separate section in PERSON16's paper",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "be28f5a0a7ae",
+   "fact_id": "R08",
+   "text": "separate section in [PERSON16]'s Overleaf paper",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "97dabc7f4e8b",
+   "fact_id": "R08",
+   "text": "the major from the ORGANIZATION3 paper",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "87b38cb646b9",
+   "fact_id": "R08",
+   "text": "use the paper to know which ASR and PROJECT3 together form the best output",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "14dd1aa97c8a",
+   "fact_id": "R08",
+   "text": "write a third paper",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "15995a72:R08@3",
+    "44a72348:R08@3",
+    "48405ba5:R08@3",
+    "4e642b44:R08@3",
+    "f03636da:R08@3"
+   ]
+  },
+  {
+   "id": "2da67e0cab1d",
+   "fact_id": "R08",
+   "text": "write it as a separate section in PERSON16's Overleaf paper",
+   "roles": [
+    "e_no_carry"
+   ],
+   "decides_rows": []
+  },
+  {
+   "id": "821064a65bfb",
+   "fact_id": "R08",
+   "text": "writing a third paper",
+   "roles": [
+    "e_wrong_form_carrier"
+   ],
+   "decides_rows": [
+    "144b6dec:R08@3"
+   ]
+  }
+ ]
+}

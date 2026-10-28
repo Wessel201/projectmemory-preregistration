@@ -1,0 +1,742 @@
+adjudicator: model
+decisions:
+  F01:
+    30 minutes or 28 minutes: false
+    30 minutes plus 15 minutes slack, closing at quarter to 5: true
+    30 minutes plus 15 minutes slack; close at quarter to 5: true
+    30 minutes, actually 28 minutes: false
+  F02:
+    20th of April: true
+    April 20: true
+    deadline is April 20: true
+    deadline on the twentieth of April: true
+    twentieth of April: true
+  F03:
+    MP3 files for reasonably small files: false
+    MP3 files if reasonably small; otherwise a repository file with links/readme and cluster storage location: true
+    MP3 files if reasonably small; otherwise cluster links plus a readme/file with locations: true
+    MP3 files that are reasonably small: false
+    MP3 files when reasonably small: false
+    store MP3 files if reasonably small: false
+    store MP3 files in the GitHub repository when reasonably small: false
+    uploading only links instead of files for small MP3s: false
+  F04:
+    be the document shared with annotators: true
+    include one section per language: false
+    one section per language: false
+    the document the annotators have also seen: true
+    the document the annotators have seen: true
+    the document which the annotators have also seen: true
+  F05:
+    annotators owns manual refinement: false
+    annotators should do manual refinement: false
+    annotators should do the manual refinement after automated jobs: true
+    automated jobs: false
+    automated jobs handled by automation: false
+    automated jobs should be done by the system: false
+    automated jobs should be done first: false
+    automated jobs should be done first, with manual refinement afterward: false
+    automated jobs should be done first, with manual refinement handled afterward: false
+    do the automated jobs first: false
+  F06:
+    42 languages: true
+    42-language model: true
+    all 42 languages: false
+    all 42 languages with subtitles: false
+    all 42 target languages: false
+    all monolingual data in all 42 languages: false
+    monolingual data in all 42 languages: false
+    monolingual data in all 42 languages translated to English: false
+    multilingual model for 42 languages: true
+    provide all target languages, all 42 languages, with subtitles: false
+  F08:
+    ASR: false
+    ASR as the worst component: true
+    ASR considered the worst component in the pipeline: true
+    ASR considered worst component in the pipeline: true
+    ASR is the worst component: true
+    ASR is the worst component in the pipeline: true
+    ASR seems to be the worst component in the pipeline: true
+    ASR the worst component in the pipeline: true
+    caused only by empty, not together with ASR: false
+    processed ORGANIZATION9 ASR: false
+  F09:
+    final hypothesis only: true
+    only on the final hypothesis: true
+    only the final hypothesis: true
+    only the final hypothesis is evaluated: true
+  F10:
+    mask the last keyword of the ASR output from unfinished sentences: true
+    masking the last key word of the ASR output from unfinished sentences: true
+    masking the last keyword of the ASR output from unfinished sentences: true
+  F11:
+    Every Tuesday: false
+    connection to ean seems to work today and is hoped to work regularly every Tuesday: false
+    every Tuesday: false
+    working today and hoped to work regularly every Tuesday: false
+  F12:
+    restart the workers and reserve the full machine for them: true
+  F20:
+    ELAN can be used for manual word-level segmentation if forced alignment fails: false
+    ELAN can be used for manual word-level segmentation when forced alignment fails: false
+    ELAN can be used to segment long audio into sentence-long units long audio segmentation: true
+    ELAN for long-audio segmentation: true
+    ELAN for segmenting long audio into sentence-long units: true
+    ELAN for sentence-level segmentation of long audio: true
+    ELAN manual segmentation at the word level when forced alignment fails: false
+    ELAN tool can be used for manual segmentation at the word level: false
+    manual segmentation at the word level using ELAN if forced alignment fails: false
+    manual segmentation at the word level using ELAN when forced alignment fails: false
+    manual segmentation with ELAN when forced alignment fails: false
+    manual word-level segmentation in ELAN when forced alignment fails: false
+    tools considered manual segmentation at the word level using ELAN if forced alignment fails: false
+  F21:
+    Czech ASR displaying Czech, English, and German: false
+    Czech ASR into displaying Czech, English and German: false
+    Czech ASR into displaying Czech, English, and German: false
+    Czech ASR into other thing and English ASR into all the things, possibly French ASR too: false
+    Czech ASR pipeline displaying Czech, English, and German: false
+    Czech ASR, English ASR, and possibly French ASR variants: false
+    Czech speech translated into English: false
+    Czech, English, and German: false
+    English and German translation in addition to Czech: false
+    English to Czech: false
+    English to Czech 3: false
+    Forced alignment for identifying words in Czech and English: true
+    find Czech speech translated into English: false
+    forced alignment can be used to identify words in Czech and English word-level alignment: true
+    forced alignment for Czech and English word identification: true
+    forced alignment for identifying Czech and English words: true
+    forced alignment for identifying words in Czech and English: true
+    mixed-language but valid sentence with most words in Czech and some in English: false
+    mixed-language output where most words are in Czech and some are in English: false
+    mostly Czech with some English words: false
+    used to identify words in Czech and English: true
+    valid mixed-language translation with mostly Czech words and some English words: false
+    whether Czech speech translated into English can be found anywhere: false
+    word-level alignment: false
+  F22:
+    It is pretty working: true
+    PERSON3 worked on client audio visualization: false
+    PERSON3 worked on client audio visualization setup: false
+    client audio visualization is working pretty well: true
+    connection to ean expected to work regularly every Tuesday: false
+    connection to ean works today: false
+    it is pretty working: true
+    mixed-language but valid sentence with most words in Czech and some in English: false
+    mock conference transcript generation and workshop-related work: false
+    mock conference transcript generation work: false
+    pretty well: false
+    pretty working: true
+    setup is pretty working: true
+    setup is working: true
+    the cleanup/release setup work: false
+    web based: false
+    web-based server-streamed visualization for live sessions: false
+    web-based streaming client/server setup: false
+    web-based streaming client/server visualizer for live sessions: false
+    web-based streaming server/client setup: false
+    web-based streaming to multiple clients: false
+    web-based streaming visualizer: false
+    web-based streaming visualizer for live sessions: false
+    working today: false
+    works offline: false
+  F23:
+    Czech ASR: false
+    Czech ASR into displaying Czech, English and German: false
+    Czech ASR into other thing: false
+    Czech ASR into other thing and English ASR into all the things, possibly French ASR too: true
+    Czech ASR, English ASR, and maybe French ASR: true
+    Czech ASR, English ASR, and possibly French ASR variants: true
+    English ASR: false
+    English ASR into all the things: false
+    French ASR: false
+    French ASR support: false
+    maybe French ASR: false
+    release content proposed Czech ASR: false
+    release content proposed Czech ASR into other thing: false
+    release content proposed English ASR: false
+    release content proposed English ASR into all the things: false
+    release content proposed French ASR: false
+    release content selected Czech ASR: false
+    release content selected English ASR: false
+    release content selected French ASR: false
+    release setup proposed Czech ASR into other thing: false
+    release setup proposed English ASR into all the things: false
+    release setup proposed French ASR: false
+    release setup proposed French ASR support: false
+  F24:
+    Bugzilla issue tracker: false
+    GitHub issue tracker for cruise control: true
+    GitHub issues: true
+    GitHub issues / issue tracker for cruise control and polishing work: true
+    GitHub issues / issue tracker routine for cruise control polishing: true
+    GitHub issues / issue tracker workflow: true
+    GitHub issues for cruise control: true
+    be in the issue tracker as well: true
+    issue tracker / GitHub issues for cruise control: true
+    issue tracker / GitHub issues for cruise control polishing: true
+    issue tracker / GitHub issues workflow: true
+    issue tracker / issue logging workflow: true
+    recorded in GitHub issue tracker: true
+    use Bugzilla/GitHub issue tracker for daily issue checking and ticking off tasks: true
+    use GitHub issues / Bugzilla-style issue tracker: true
+    use an issue tracker / GitHub issues for cruise control and polishing work: true
+    using an issue tracker (Bugzilla or GitHub issues) for cruise control/pipeline work: true
+  F25:
+    Simple preprocessing script for sentence segmentation and sentence alignment: false
+    one simple script to run PERSON7 ASR on the cluster in the correct way: true
+    one simple script to run the PERSON7 ASR on the cluster in the correct way: true
+    one simple script to run the [PERSON7] ASR on the cluster in the correct way: true
+    script editing for simple processing adjustments: false
+    simple preprocessing script for sentence segmentation: false
+    simple preprocessing script for sentence segmentation and sentence alignment: false
+    simple preprocessing script with some errors: false
+  F26:
+    21 languages test set: true
+    cleaned for 21 ORGANIZATION2 languages from the European website: true
+    cleaned tested data for 21 ORGANIZATION2 languages from the European website: true
+    cleaning the tested data for 21 ORGANIZATION2 languages from the European website: true
+    data cleaning for 21 ORGANIZATION2 languages: true
+    finding annotators who will process the [ORGANIZATION6] files for the twenty one languages: true
+  F27:
+    6 languages on GitHub: true
+    6 languages uploaded to GitHub: true
+    6-language model: false
+    multilingual model for 6 languages: false
+    website for [ORGANIZATION6] languages: false
+  F28:
+    README with original link: true
+    README with the original link: true
+    original link: true
+    original link and source domain in README: true
+    original link for the website: true
+    read me with the original link: true
+    readme with original link: true
+    readme with the original link: true
+  F29:
+    auditing: false
+    auditing domain: false
+    computational linguistics: false
+    computational linguistics domain: false
+    domains of computational linguistics: false
+    domains of computational linguistics and auditing: true
+  F30:
+    ASR workers considered offline systems not likely to be better: false
+    not much better than before: true
+    offline systems not likely to be better: false
+  F31:
+    PERSON4 owns English ASR implementation training: true
+    PERSON4 owns English ASR training implementation: true
+    PERSON4 owns train his implementation for English: true
+    PERSON4 owns train his implementation for English ASR: true
+    PERSON4 owns train his implementation for English ASR setup: true
+    PERSON4 owns training his implementation for English ASR: true
+    PERSON8 owns PROJECT6-based ASR training: true
+    PERSON8 owns train another PROJECT6-based ASR: true
+    PERSON8 owns training another PROJECT6-based ASR: true
+    having our own ASRs: true
+    having own ASRs: true
+    our own ASRs: true
+    own ASRs: true
+  F32:
+    ASR quality as the first criterion: true
+    focus on ASR quality as the first criterion: true
+  F35:
+    allowed corpora for constrained run should double-check edible SLT test set / Double SLT test webpage: false
+    allowed corpora for the constrained run: true
+    allowed corpora only: true
+    double-check the edible SLT test set webpage for allowed corpora in the constrained run: false
+    double-check the edible SLT test set webpage for allowed corpora under the constrained run: false
+    double-check the edible SLT test set webpage for allowed/licensed corpora for the constrained run: false
+    double-check the edible SLT test set webpage for licensed/allowed corpora: false
+    double-check the editable SLT test set webpage for allowed corpora and constrained-run licensing: false
+    double-check which corpora are licensed or allowed for the constrained run: false
+    license/allowed corpora for constrained run: false
+    limit the run to corpora allowed for the constrained run when limiting ourselves: true
+    limit the run to corpora allowed for the constrained setup: true
+    only corpora allowed for the constrained run: true
+    which corpora are licensed or allowed for the constrained run: false
+  F36:
+    based on pause durations: false
+    built-in segmentation of the output using acoustic information and silence duration after each word: true
+    built-in segmentation of the output using silence duration after each word: true
+    pass silence-token duration information to PERSON3 for the segmenter model: true
+    pass silence-token information to PERSON3 for the segmenter model: true
+    passing silence-duration information to PERSON3 for the segmenter model: true
+    predict a silence token after each word and use its duration to detect end of sentence: true
+    predict a silence token after each word when not running in an online setup: false
+    predict a silence token after each word when not running online: false
+    predict silence token after each word when not running online: false
+    receive silence-duration information: true
+    silence token duration feature considered useful for segmenter model: true
+    silence token duration threshold as an end-of-sentence signal for segmentation: true
+    silence token duration threshold considered longer duration indicates end of sentence: true
+    silence token duration threshold considered use duration longer than a threshold as an end-of-sentence indicator: true
+    silence-token duration considered duration threshold as end-of-sentence indicator: true
+    silence-token information considered pass this information to PERSON3: false
+    use silence-token duration longer than a threshold as an end-of-sentence signal: true
+    use silence-token duration to help segmentation/punctuation of output: true
+    use silence-token information to help segmentation / punctuation of the output: true
+    using silence-token duration after each word to help segmentation/punctuation when not running online: true
+    working on Czech segmentor based on pause durations: false
+  F37:
+    add launcher/install scripts into the cruise control repository setup scripts: true
+    add launchers or installers and launchers within the cruise control repository: true
+    cruise control repository considered scripts that run the worker on the coster: false
+    cruise control repository contains scripts to run the worker on the coster: false
+    cruise control repository needs launchers or installators and launchers for tools that can be started locally: true
+    cruise control repository should include launchers or installators and launchers for tools we can start: true
+    do not have launchers or installers and launchers within the cruise control repository: false
+    does not have launchers or installers and launchers within the cruise control repository: false
+    has launchers or installers and launchers within the cruise control repository: true
+    launcher or installer support in cruise control repository: true
+    launcher/installer support in cruise control repository: true
+    launcher/installers in cruise control repository: true
+    launcher/installers in the cruise control repository: true
+    launchers or installators and launchers in the cruise control repository: true
+    launchers or installers and launchers in cruise control repository: true
+    launchers or installers and launchers in the cruise control repository: true
+    launchers or installers and launchers within the cruise control repository: true
+    launchers or installers in cruise control repository: true
+    launchers or installers in the cruise control repository: true
+    launchers/installers in cruise control repository needed for PROJECT6 setup: true
+    launchers/installers in cruise control repository needed for tools we know how to start: true
+    launchers/installers in cruise control repository needed for your model: true
+    launchers/installers in cruise control repository not true for PERSON7 setup: false
+    launchers/installers in cruise control repository probably missing for PROJECT2 model: false
+    needs launchers or installers and launchers within the cruise control repository: true
+    probably does not have launchers or installers and launchers within the cruise control repository: false
+  F38:
+    42 languages: false
+    42-language model: false
+    all 42 languages: true
+    all 42 languages with subtitles: true
+    all 42 target languages: true
+    all monolingual data in all 42 languages: false
+    monolingual data in all 42 languages: false
+    monolingual data in all 42 languages translated to English: false
+    multilingual model for 42 languages: false
+  F39:
+    all monolingual data in all 42 languages: false
+    back translated into English: true
+    back translation directory owns PERSON11: false
+    back translation models selected models by PERSON10: false
+    back translation target decided English: false
+    back translation target selected English: false
+    back translation target translate English: false
+    back translation target translated into English: false
+    back translation target translated to English: false
+    back translation workflow decided use models by PERSON10: false
+    back translation workflow ship to PERSON10: false
+    create a directory of back translated text or monotext with back translation: false
+    directory of back translated text / monotext with back translation: false
+    directory of back translated text or monotext with back translation: false
+    large Romanian monolingual data: false
+    large Serbian monolingual data: false
+    large monolingual data: false
+    large monolingual data, including Romanian and Serbian: false
+    monolingual data in all 42 languages: true
+    monolingual data in all 42 languages translated to English: true
+    monolingual data needs back translation all 42 languages: true
+    monolingual data scope decided all 42 languages: false
+    monolingual data selected all 42 languages: false
+    use models to translate monolingual data into English and populate a back-translated text directory: true
+    use these models for back translation: false
+  F50:
+    32 percent word error rate: true
+    '[unintelligible] system with 32% word error rate as best so far': true
+    access to a partly involved system with 32% word error rate: true
+    'best so far: system with 32% word error rate': true
+    unintelligible system with 32 percent word error rate: true
+  F53:
+    baseline run considered sufficient for the moment: true
+    baseline run is the current aim: true
+    baseline run now and improvement only if extra time remains: true
+    baseline run now, improve later if extra time: true
+    baseline run now, improve only if extra time remains: true
+    baseline run now, improvement only if extra time remains: true
+    baseline run only for now: true
+    baseline run only for now, with improvement later only if extra time remains: true
+    baseline run should be done now: true
+    combination of the things at the moment: true
+    combination of the things should be aimed at current combination of components: true
+    combination of the things should be the current aim: true
+    do a baseline run now: true
+    done now: false
+  F56:
+    Github/Overleaf workspace: false
+    Overleaf already created: false
+    Overleaf already exists: false
+    Overleaf as synchronization point for everybody: false
+    Overleaf is empty: true
+    Overleaf selected created and used as synchronization point for everybody: false
+    created but empty: true
+    empty: true
+    first author of each paper: false
+    main author / first author of each paper: false
+    push everybody to contribute to the paper: false
+  F57:
+    avoid doing the same thing twice: false
+    doing the same thing twice: false
+    synchronize with PERSON1 to ensure all is done exactly once: false
+    the work with annotator help: false
+  F58:
+    GitHub issue tracker for cruise control: false
+    GitHub issues / issue tracker for cruise control and polishing work: false
+    GitHub issues for cruise control: false
+    Simple preprocessing script for sentence segmentation and sentence alignment: false
+    Simple script for PERSON13 decided deployment or running the workers on the setup: true
+    a polished consolidated release of the cruise control setup: false
+    a polished release of the cruise control setup with all bells and whistles merged: false
+    add launchers or installers and launchers within the cruise control repository: false
+    cleanup and polishing of the cruise control setup release: false
+    cleanup of the cruise control setup: false
+    cruise control: true
+    do not have launchers or installers and launchers within the cruise control repository: false
+    does not have launchers or installers and launchers within the cruise control repository: false
+    for PERSON13 in cruise control: true
+    has launchers or installers and launchers within the cruise control repository: false
+    issue tracker / GitHub issues for cruise control polishing: false
+    launcher or installer support in cruise control repository: false
+    launcher/installer support in cruise control repository: false
+    launcher/installers in cruise control repository: false
+    launcher/installers in the cruise control repository: false
+    launchers or installers and launchers in cruise control repository: false
+    launchers or installers and launchers in the cruise control repository: false
+    launchers or installers and launchers within the cruise control repository: false
+    launchers or installers in cruise control repository: false
+    manual cruise-control style running before making it push-button easy: false
+    manual cruise-control style running to observe how MT systems process the files: false
+    needs launchers or installers and launchers within the cruise control repository: false
+    one polished release of the cruise control setup: false
+    one simple script to run PERSON7 ASR on the cluster in the correct way: false
+    one simple script to run the PERSON7 ASR on the cluster in the correct way: false
+    one simple script to run the [PERSON7] ASR on the cluster in the correct way: false
+    probably does not have launchers or installers and launchers within the cruise control repository: false
+    run cruise control manually on the PROJECT1 test set: false
+    script editing for simple processing adjustments: false
+    simple preprocessing script for sentence segmentation: false
+    simple preprocessing script for sentence segmentation and sentence alignment: false
+    simple preprocessing script with some errors: false
+    simple processing scripts: false
+    simple script for PERSON13 in cruise control: true
+    simple script for cruise control / deployment or running the workers on the setup: true
+    start running cruise control manually on the PROJECT1 test set: false
+    using an issue tracker (Bugzilla or GitHub issues) for cruise control/pipeline work: false
+    visualizer / cruise control setup integration: false
+    worker scripts in cruise control: false
+  F59:
+    based on pause durations: true
+    working on Czech segmentor based on pause durations: true
+  F60:
+    a second copy: false
+    a second copy of the existing [ORGANIZATION1] collection files: false
+    create a second copy of the existing files from the [ORGANIZATION1] collection: false
+    create one new subdirectory: false
+    create one new subdirectory in the documents for the [ORGANIZATION1] document: false
+    do not create a second copy: false
+    do not create a second copy of the existing files: false
+    existing files from [ORGANIZATION1] collection should not have second copy no duplicate copies: false
+    one new subdirectory: false
+    second copy: false
+    second copy of existing [ORGANIZATION1] collection files: false
+    second copy of existing files: false
+  F61:
+    create organization of the training data on disk: false
+    create the organization of the test/training data on disk, not in version control, because files will be bigger: false
+    include Common Voice in the training data: false
+    mainly training data, not the [PROJECT5] test set: true
+    mono data and prepare test set for the rest of the languages except [ORGANIZATION2] language: false
+    not to use [PROJECT5] test set; use mainly training data instead: true
+    not to use the [PROJECT5] test set; put this mainly to training data: true
+    not use [PROJECT5] test set; put it mainly to training data: true
+    not yet organized for training data: false
+    only dev set has been evaluated so far; test set has not yet been processed: false
+    only on dev set so far; test set not yet processed: false
+    organization of the test/training data not yet available: false
+    prepare mono data and test set for the rest of the languages except [ORGANIZATION2] language: false
+    put mainly to training data, not to the [PROJECT5] test set: true
+    test data organization considered not yet available: false
+    test data organization considered not yet organized: false
+    trained on several other data sets: false
+    ? training data organization considered needs to be created on disk rather than in version control because files will be bigger
+    : false
+    training data organization proposed create on the disc, not version: false
+    ? training data organization proposed create the organization on disk rather than in version control because files will be bigger
+    : false
+    use data to train the model with partial inputs: false
+    was trained on several other data sets: false
+    what was in the training data: false
+  F62:
+    bigger files: false
+    create on the disc rather than in version control because files will be bigger: true
+    create on the disc, not version: true
+    create organization of the training data on disk: false
+    create the organization of the test/training data on disk, not in version control, because files will be bigger: true
+    create the organization on disk rather than in version control because files will be bigger: true
+    needs to be created on disk rather than in version control because files will be bigger: true
+    on the disc, not version: true
+    on the disc, not version control: true
+    on the disc, not version, because files will be bigger: true
+  F63:
+    Serbian, Croatian, Bosnian, Montenegrin: true
+  F64:
+    continue beyond TSV files in GitHub repository to find annotators who will process the files: true
+    continue past TSV upload to find annotators to process the files: true
+    do not stop at TSV files in the GitHub repository; continue forward to find annotators for processing: true
+    find annotators to process the files after TSV upload: true
+    find annotators who will process the files: true
+    find annotators who will process the files after TSV upload: true
+    find the annotators who will process the [ORGANIZATION6] files: true
+    finding annotators who will process the [ORGANIZATION6] files for the twenty one languages: true
+  F65:
+    low amount of work: false
+    streamlined communication with validators to avoid many individual emails: true
+  F66:
+    Romanian is critical because the project officer is Romanian: false
+    as multilingual as possible: true
+    critical because the project officer is Romanian: false
+  F67:
+    23rd: true
+    after the edible SLT, around the 23rd: true
+    after the edible SLT, around the 23rd (with 20th or 24th mentioned as alternatives): true
+  F68:
+    Romanian is critical because the project officer is Romanian: true
+    Romanian language support considered critical: true
+    critical: false
+    critical because the project officer is Romanian: true
+  F69:
+    April 18 deployment may be at risk: true
+    PERSON4 should warn if deployment by April 18 would be at risk: true
+    deployment by April 18 would be at risk: true
+  F70:
+    GPU machines: false
+    GPU machines as primary deployment target: false
+    GPU machines as the primary deployment target: false
+    GPU machines by PERSON14 and/or PERSON4 with PERSON14's help: false
+    TPU as a fallback: false
+    TPU as fallback: false
+    TPU as fallback only: false
+    TPU considered as fallback only, not the sole solution: false
+    demo timing fallback considered 20th or 24th for the paper: false
+    deployment fallback TPU: false
+    deployment fallback considered TPU: false
+    on TPU as a fallback: false
+    twice at the same time on GPU machines: false
+    twice at the same time on GPU machines with help from PERSON14: false
+    twice at the same time on GPU machines, with TPU as fallback: true
+  F81:
+    3 ORGANIZATION6 online ASRs: true
+    3 [ORGANIZATION6] online ASRs: true
+    3 by ORGANIZATION6: true
+    3 by [ORGANIZATION6]: true
+    BLAS scores on the 3 ORGANIZATION6 online ASRs: true
+    BLAS scores on the 3 [ORGANIZATION6] online ASRs: true
+    PERSON3: false
+    average of the scores of the 3 ASRs: false
+    best of the 3 ASRs: false
+    the 3 by ORGANIZATION6: true
+    the 3 by [ORGANIZATION6]: true
+  F82:
+    Antrecorp rejected dropped from consideration because it is very unstable: false
+    average of the scores of the 3 ASRs: false
+    average of the scores of the 3 ASRs and pick the best: true
+    average score: false
+    average the scores of the 3 ASRs and pick the best: true
+    best ASR based on average of 3 ASR scores: true
+    best average of the scores of the 3 ASRs: true
+  F83:
+    make sure the system is ready to subtitle / paragraph view by 11 or before: false
+    paragraph view: true
+    paragraph view for subtitle display by 11 or before: true
+    paragraph view instead of subtitles: true
+    paragraph view subtitle display: true
+    paragraph view subtitle display by 11 or before: true
+    quest view only, not subtitles: true
+    ready to subtitle / paragraph view by 11 or earlier: false
+    ready to subtitle / paragraph view setup by 11 or earlier: false
+  F84:
+    Czech ASR displaying Czech, English, and German: true
+    Czech ASR into displaying Czech, English and German: true
+    Czech ASR into displaying Czech, English, and German: true
+    Czech ASR pipeline displaying Czech, English, and German: true
+    Czech, English, and German: true
+    Czech, English, and German display pipeline: true
+    English and German translation in addition to Czech: true
+    English to German: false
+    English to German option: false
+    German: false
+    about 31 BLEU on German-English and English-German: false
+    contains two example files, one in German and one in English: false
+    multiple languages beyond Czech, English, and German: false
+    translate into English and German: false
+    two example files, one in German and one in English: false
+    'two example files: one German and one English': false
+  F85:
+    If the audio is understood, choose the correct thing from the sound: true
+    If the sound is understood, choose the correct thing from the audio: true
+    Trust only the sound, not the OSTT, to determine what is correct: true
+    Use mismatches to locate spots and re-listen to the sound: true
+    Use the sound as the source of truth and resolve EAF/OSTT mismatches by listening again rather than flipping a coin: true
+    Use the sound to resolve EAF/OSTT transcription mismatches rather than flipping a coin: true
+    Use the sound to resolve transcription mismatches rather than flipping a coin: true
+    hear again the sound to find the spots: true
+    hear again the sound to resolve mismatches: true
+    listen again to the sound to resolve mismatches: true
+    sound: true
+    sound to resolve mismatches by re-listening: true
+    use mismatches to find spots and listen again to the sound: true
+  F86:
+    Correct the EAF files based on the sound: false
+    EAF and OSTT files considered Equally likely to contain transcription errors: false
+    EAF and OSTT transcription errors considered Equally likely to contain transcription errors: false
+    EAF and modify OSTT according to EAF when the listener does not understand: true
+    EAF file correction basis selected sound: false
+    EAF files and OSTT files are equally likely to have transcription errors: false
+    EAF files correction basis selected sound: false
+    EAF files to be corrected based on sound and mismatch points in texts: false
+    'EAF versions proposed Provide two versions: one per item and one based on the corrected version': false
+    Equally likely to contain transcription errors: false
+    Flip a coin to choose between EAF and OSTT: false
+    For each mismatch, choose the EAF and modify the OSTT according to the EAF when the audio is not understood: true
+    For each mismatch, choose the EAF and modify the OSTT according to the EAF when the sound is not understood: true
+    ? Manually revise mismatched files by checking the sound and choosing the correct transcript, using EAF when it is the easier option but correcting EAF from OSTT when EAF is wrong
+    : false
+    Use the sound as the source of truth and resolve EAF/OSTT mismatches by listening again rather than flipping a coin: false
+    Use the sound as the source of truth to resolve EAF/OSTT mismatches: false
+    choose EAF files for time-labeled transcripts: false
+    flip a coin to choose between EAF and OSTT: false
+    mismatch points added to EAF files places where OSTT files show the mismatch: false
+    ? mismatch resolution method decided Use the sound as the source of truth and resolve EAF/OSTT mismatches by listening again rather than flipping a coin
+    : false
+    places where OSTT files show the mismatch: false
+    sound: false
+    transcription workflow decided Use the sound as the source of truth to resolve EAF/OSTT mismatches: false
+  F88:
+    sentence catch up: false
+    sentence catch up definition is still imperfect and needs improvement: true
+    still imperfect: true
+    still imperfect and needing improvement: true
+    still imperfect and needs improvement: true
+  F89:
+    4 to 8 pages: true
+    system papers length has lower bound 4 pages: false
+    system papers lower bound is 4 pages: false
+    transcripts without timestamps from PERSON4 and PERSON8: false
+  F91:
+    separate section in PERSON16's Overleaf paper: true
+    separate section in PERSON16's paper: true
+    separate section in [PERSON16]'s Overleaf paper: true
+    write it as a separate section in PERSON16's Overleaf paper: true
+  F92:
+    Google scored slightly better: false
+    Microsoft scored in the middle: false
+    Microsoft somewhere in the middle: false
+    all parts of the test set: false
+    all systems on the test set: false
+    all systems on the test set, including Google submission and Microsoft: false
+    all the many system: false
+    blascors of all the systems: false
+    copy of [PERSON9]'s spreadsheet with evaluated blascors of all the systems: false
+    copy of evaluated blascors of all the systems: false
+    evaluate all systems on the test set, including Google and Microsoft submissions: false
+    evaluate all systems on the test set, including Google submission and Microsoft: false
+    evaluated BLEU scores of all the systems and passed them in a spreadsheet: false
+    evaluated blascors of all the systems: false
+    evaluation of BLEU scores for all systems: false
+    evaluation of all the systems: false
+    evaluation of blascors of all the systems: false
+    run them on all parts of the test set: false
+    running them on all parts of the test set: false
+    submission of all the many system: false
+  F93:
+    finalize the runs: true
+    finalize the runs after the deadline: true
+    finalizing the runs: true
+    other MT runs after the deadline: true
+    other MT runs to make the tables complete in the paper: true
+    run the other MT after the deadline to make the tables complete: true
+    runs should be finalized other MT runs after the deadline: true
+    runs should finalize other MT runs after the deadline: true
+    tables should be made complete by finalizing all runs: true
+  R01:
+    PERSON2 will send the document by tonight: true
+    PERSON2 will send the prepared material by tonight: true
+    email PERSON5 about the website/data source: false
+    email to PERSON5: false
+    send the prepared material by tonight: true
+    sending the update by tonight: true
+    update the document instead of sending it directly: true
+  R02:
+    online aspect: true
+  R03:
+    Antrecorp test sets: true
+    Antrecorp test sets considered should not use: true
+    not to use [PROJECT5] test set; use mainly training data instead: false
+    not to use the [PROJECT5] test set; put this mainly to training data: false
+    not use [PROJECT5] test set; put it mainly to training data: false
+    use Antrecorp test sets: true
+  R04:
+    mainly training data, not the [PROJECT5] test set: true
+    not to use [PROJECT5] test set; use mainly training data instead: true
+    not to use the [PROJECT5] test set; put this mainly to training data: true
+    not use [PROJECT5] test set; put it mainly to training data: true
+    only dev set has been evaluated so far; test set has not yet been processed: false
+    only on dev set so far; test set not yet processed: false
+    put mainly to training data, not to the [PROJECT5] test set: true
+  R05:
+    TPU as fallback only: false
+    TPU as only solution preferred not the only solution: true
+    TPU as the only solution: true
+    TPU considered as fallback only, not the sole solution: true
+    TPU deployment rejected as the only solution: true
+    TPU only solution: true
+    deployment not only solution TPU: true
+    not the only solution: false
+  R06:
+    Antrecorp: true
+    Antrecorp rejected dropped from consideration because it is very unstable: true
+    dropped from consideration because it is very unstable: false
+  R07:
+    Correct EAF files based on OSTT files when EAF files are wrong: true
+    Correct the EAF files based on the sound: false
+    Correct the EAF files based on the sound, not the OSTT files: true
+    EAF and OSTT files considered Equally likely to contain transcription errors: false
+    EAF and OSTT files considered equally likely to have transcription errors: false
+    EAF file correction basis selected sound: false
+    EAF files and OSTT files are equally likely to have transcription errors: false
+    EAF files corrected by comparing mismatches places where OSTT files show mismatch: false
+    EAF files correction basis selected sound: false
+    EAF files to be corrected based on sound and mismatch points in texts: false
+    OSTT files as correction basis rejected OSTT files: true
+    OSTT files not trusted for correction OSTT as basis for deciding correctness: true
+    OSTT files not trusted for correction basis OSTT as source of truth: true
+    OSTT files rejected as basis for correction trust as source of truth: true
+    OSTT files rejected as correction basis trusting OSTT for correctness: true
+    Use the sound as the source of truth and resolve EAF/OSTT mismatches by listening again rather than flipping a coin: true
+    Use the sound to resolve EAF/OSTT transcription mismatches rather than flipping a coin: true
+    correct EAF files based on OSTT files: true
+    correct EAF files based on the OSTT files when EAF files are wrong: true
+    correct EAF files based on the sound and mark mismatches from OSTT files: false
+    correcting EAF files based on OSTT files: true
+    flip a coin to choose between EAF and OSTT: true
+    look at mismatches and manually choose/correct EAF files based on OSTT: true
+    mismatch points added to EAF files places where OSTT files show the mismatch: false
+    trust OSTT files more than EAF files when EAF is wrong: true
+    trust as source of truth: false
+    trusting OSTT for correctness: true
+  R08:
+    a separate paper: false
+    choose the major from the ORGANIZATION3 paper: false
+    major from the ORGANIZATION3 paper: false
+    separate paper: false
+    separate section in PERSON16's Overleaf paper: false
+    separate section in PERSON16's paper: false
+    separate section in [PERSON16]'s Overleaf paper: false
+    the major from the ORGANIZATION3 paper: false
+    use the paper to know which ASR and PROJECT3 together form the best output: false
+    write a third paper: true
+    write it as a separate section in PERSON16's Overleaf paper: false
+    writing a third paper: true
+note: 'Model adjudications, not human (23 October 2026). Rounds 1-2: single Claude subagent judgements from the matcher audits and a queue adjudicator. Round 3 and the fixpoint round: two independent Claude subagent adjudicators per item and a third on disagreements, under the standard in 23-loss-trace.md; round 3 re-checked every round-1/2 decision under that standard. A human second coder samples them in V4.'
